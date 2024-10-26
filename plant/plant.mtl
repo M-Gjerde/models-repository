@@ -1,0 +1,32 @@
+# Blender 4.2.3 LTS MTL File: 'uploads_files_3460574_Vase+Plant.blend'
+# www.blender.org
+
+newmtl Material
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.449838 0.449838 0.449838
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Material.002
+Ka 1.000000 1.000000 1.000000
+Ks 0.360000 0.360000 0.360000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd bark_brown_01_diff_4k.jpg
+map_Ns C:/Users/3D obj/Texture/Wood/bark_brown_01_rough_4k.jpg
+
+newmtl Material.003
+Ns 147.455994
+Ka 1.000000 1.000000 1.000000
+Kd 0.010462 0.107892 0.010436
+Ks 0.340000 0.340000 0.340000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
