@@ -1,0 +1,106 @@
+Scene: Scene name
+Entities:
+  - Entity: 4459415209338679201
+    TagComponent:
+      Tag: DefaultScene
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    VisibleComponent:
+      Visible: true
+    GroupComponent:
+      {}
+    GroupComponent:
+      ColmapPath: ""
+  - Entity: 8941633473108694455
+    TagComponent:
+      Tag: Empty Entity
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+  - Entity: 15341468740139568518
+    Parent: 4459415209338679201
+    TagComponent:
+      Tag: TV
+    TransformComponent:
+      Position: [-1.29999995, -2, -0.800000012]
+      Rotation: [-4.37113883e-08, 0, 0, 1]
+      Scale: [0.00999999978, 0.00999999978, 0.00999999978]
+    MeshComponent:
+      ModelPath: C:\Users\mgjer\models\tv\Samsung_QLED_55__Studio_Stand_mat(2).obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Metallic: 1
+      Roughness: 1
+      UsesTexture: false
+      EmissiveFactor: [0, 0, 0, 0]
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      UsesVideoSource: false
+  - Entity: 12179123200049016701
+    Parent: 4459415209338679201
+    TagComponent:
+      Tag: Plant
+    TransformComponent:
+      Position: [0.200000003, 1.79999995, -0.699999988]
+      Rotation: [1, 0, 0, 0]
+      Scale: [0.100000001, 0.100000001, 0.100000001]
+    MeshComponent:
+      ModelPath: C:\Users\mgjer\models\plant\plant.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Metallic: 1
+      Roughness: 1
+      UsesTexture: false
+      EmissiveFactor: [0, 0, 0, 0]
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      UsesVideoSource: false
+  - Entity: 14517439867541907739
+    Parent: 4459415209338679201
+    TagComponent:
+      Tag: Workbench
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [0.707106769, 0.707106769, 0, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      ModelPath: C:\Users\mgjer\models\workbench\Work Bench.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Metallic: 1
+      Roughness: 1
+      UsesTexture: false
+      EmissiveFactor: [0, 0, 0, 0]
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      UsesVideoSource: false
+  - Entity: 1937775165488042861
+    Parent: 4459415209338679201
+    TagComponent:
+      Tag: S30
+    TransformComponent:
+      Position: [-0.100000001, 0, 0.0450000018]
+      Rotation: [0.69841522, 0, 0, 0.715692759]
+      Scale: [0.200000003, 0.200000003, 0.200000003]
+    MeshComponent:
+      ModelPath: C:\Users\mgjer\CLionProjects\multisense_viewer\Assets\Models\obj\s30.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Metallic: 1
+      Roughness: 1
+      UsesTexture: false
+      EmissiveFactor: [0, 0, 0, 0]
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      UsesVideoSource: false
