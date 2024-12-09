@@ -1,0 +1,70 @@
+Scene: Scene name
+Entities:
+  - Entity: 16881766873148033992
+    TagComponent:
+      Tag: RayTracedObject
+    TransformComponent:
+      Position: [2.20000005, 0, 0]
+      Rotation: [0.527029037, -0.426779687, -0.462496728, 0.571135879]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/disk.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Metallic: 1
+      Roughness: 1
+      UsesTexture: false
+      EmissiveFactor: [0, 0, 0, 0]
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      UsesVideoSource: false
+  - Entity: 1084414121289711320
+    TagComponent:
+      Tag: Camera
+    TransformComponent:
+      Position: [-1.79999995, 0, 0.699999988]
+      Rotation: [0.49999997, 0.49999997, -0.49999997, -0.49999997]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      ModelPath: ""
+      MeshDataType: CAMERA_GIZMO
+      PolygonMode: Line
+    CameraComponent:
+      render: true
+      Type: flycam
+      Width: 1000
+      Height: 1280
+      ZNear: 0.100000001
+      ZFar: 100
+      FOV: 60
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Metallic: 1
+      Roughness: 1
+      UsesTexture: false
+      EmissiveFactor: [0, 0, 0, 0]
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      UsesVideoSource: false
+  - Entity: 5141508158037075023
+    TagComponent:
+      Tag: Coordinates
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/coordinates/coordinates.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Metallic: 1
+      Roughness: 1
+      UsesTexture: false
+      EmissiveFactor: [0, 0, 0, 0]
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      UsesVideoSource: false
