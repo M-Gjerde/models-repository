@@ -1,27 +1,8 @@
 Scene: Scene name
 Entities:
-  - Entity: 13670145708280192864
+  - Entity: 15344011137047808089
     TagComponent:
-      Tag: Camera2
-    TransformComponent:
-      Position: [1.79999995, 0, 2.70000005]
-      Rotation: [0.693156362, 0.13976483, 0.13976483, 0.693156362]
-      Scale: [1, 1, 1]
-    MeshComponent:
-      MeshDataType: CAMERA_GIZMO_PINHOLE
-      PolygonMode: Line
-    CameraComponent:
-      CameraType: PINHOLE
-      PinHoleParameters:
-        Height: 688
-        Width: 996
-        Fx: 1280
-        Fy: 720
-        Cx: 498
-        Cy: 344
-  - Entity: 11204925179472400177
-    TagComponent:
-      Tag: GaussianCoordinates
+      Tag: GaussianModel
     TransformComponent:
       Position: [0, 0, 0]
       Rotation: [1, 0, 0, 0]
@@ -30,9 +11,9 @@ Entities:
       Means:
         - [0, 0, 0]
       Scales:
-        - [0.5, 0.5, 0.5]
+        - [1, 1, 1]
       Rotations: [[1, 0, 0, 0]]
-      Opacities: [1]
-      Colors: [[1, 1, 0], [1, 0, 0], [0, 1, 0], [0, 0, 1]]
-  - {Entity: 7068684109123369578, TagComponent: {Tag: Camera}, TransformComponent: {Position: [-2.4000001, -0.699999988, 2.5999999], Rotation: [-0.560380578, 0.244824231, 0.316765606, -0.725047708], Scale: [1, 1, 1]}, MeshComponent: {MeshDataType: CAMERA_GIZMO_PINHOLE, PolygonMode: Line}, CameraComponent: {CameraType: PINHOLE, PinHoleParameters: {Height: 688, Width: 996, Fx: 600, Fy: 600, Cx: 498, Cy: 344}}}
-  - {Entity: 6664554649906565740, TagComponent: {Tag: Disk1}, TransformComponent: {Position: [0, 0, 0], Rotation: [1, 0, 0, 0], Scale: [1, 1, 1]}, MeshComponent: {ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/disk.obj, MeshDataType: OBJ_FILE, PolygonMode: Fill}}
+      Opacities: [0.600000024]
+      Colors: [[1, 0, 0]]
+  - {Entity: 16881766873148033992, TagComponent: {Tag: RayTracedObject}, TransformComponent: {Position: [2.20000005, 0, 0], Rotation: [0.527029037, -0.426779687, -0.462496728, 0.571135879], Scale: [1, 1, 1]}, MeshComponent: {ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/disk.obj, MeshDataType: OBJ_FILE, PolygonMode: Fill}, MaterialComponent: {BaseColor: [0.800000012, 0.800000012, 0.800000012, 1], Metallic: 1, Roughness: 1, UsesTexture: false, EmissiveFactor: [0, 0, 0, 0], VertexShader: defaultBasic.vert, FragmentShader: defaultPhongLight.frag, UsesVideoSource: false}}
+  - {Entity: 1084414121289711320, TagComponent: {Tag: Camera}, TransformComponent: {Position: [-1.79999995, 0, 7.19999981], Rotation: [0.695931375, -0.125217795, -0.125217825, 0.695931375], Scale: [1, 1, 1]}, MeshComponent: {MeshDataType: CAMERA_GIZMO_PINHOLE, PolygonMode: Line}, CameraComponent: {CameraType: PINHOLE, PinHoleParameters: {Height: 720, Width: 1280, Fx: 1280, Fy: 720, Cx: 640, Cy: 360}}, MaterialComponent: {BaseColor: [0.800000012, 0.800000012, 0.800000012, 1], Metallic: 1, Roughness: 1, UsesTexture: false, EmissiveFactor: [0, 0, 0, 0], VertexShader: defaultBasic.vert, FragmentShader: defaultPhongLight.frag, UsesVideoSource: false}}
