@@ -1,162 +1,46 @@
 Scene: Scene name
 Entities:
-  - Entity: 1343292866250527671
-    Parent: 12122277407116204119
+  - Entity: 1151602748887213009
     TagComponent:
-      Tag: Left
+      Tag: PlaneObject
     TransformComponent:
-      Position: [0, 1, 1]
-      Rotation: [0.707106769, 0.707106769, 0, 0]
-      Scale: [3, 2, 1]
+      Position: [-0.5, 0.600000024, 0.899999976]
+      Rotation: [0.959273458, 0.262427509, 0.100823708, -0.0275822412]
+      Scale: [0.300000012, 0.300000012, 1]
     MeshComponent:
-      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/plane.obj
+      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/quad.obj
       MeshDataType: OBJ_FILE
       PolygonMode: Fill
     MaterialComponent:
       BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
-      Metallic: 1
-      Roughness: 1
-      UsesTexture: false
-      EmissiveFactor: [0, 0, 0, 0]
+      Emission: 1.26999998
+      Diffuse: 0.930000007
+      Specular: 1.90999997
+      PhongExponent: 32.9000015
       VertexShader: defaultBasic.vert
       FragmentShader: defaultPhongLight.frag
-      UsesVideoSource: false
-  - Entity: 12122277407116204119
-    TagComponent:
-      Tag: Cornell Shell
-    TransformComponent:
-      Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
-      Scale: [1, 1, 1]
-    VisibleComponent:
-      Visible: true
-    GroupComponent:
-      {}
-    GroupComponent:
-      ColmapPath: ""
-  - Entity: 8793289382359994507
+      AlbedoTexturePath: default.png
+  - Entity: 12364488892589209224
     Parent: 12122277407116204119
     TagComponent:
-      Tag: Bottom
+      Tag: RoofLight
     TransformComponent:
-      Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
-      Scale: [3, 2, 1]
-    MeshComponent:
-      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/plane.obj
-      MeshDataType: OBJ_FILE
-      PolygonMode: Fill
-    MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
-      Metallic: 1
-      Roughness: 1
-      UsesTexture: false
-      EmissiveFactor: [0, 0, 0, 0]
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      UsesVideoSource: false
-  - Entity: 7068684109123369578
-    TagComponent:
-      Tag: Camera
-    TransformComponent:
-      Position: [2.5, 0, 0.899999976]
-      Rotation: [0.494736731, -0.494736731, 0.505208433, -0.505208433]
-      Scale: [1, 1, 1]
-    MeshComponent:
-      MeshDataType: CAMERA_GIZMO_PINHOLE
-      PolygonMode: Line
-    CameraComponent:
-      CameraType: PINHOLE
-      PinHoleParameters:
-        Height: 688
-        Width: 996
-        Fx: 600
-        Fy: 600
-        Cx: 498
-        Cy: 344
-  - Entity: 6664554649906565740
-    Parent: 12122277407116204119
-    TagComponent:
-      Tag: Back
-    TransformComponent:
-      Position: [-1.5, 0, 1]
-      Rotation: [0.707228839, 0, 0.706984699, 0]
-      Scale: [2, 2, 1]
-    MeshComponent:
-      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/plane.obj
-      MeshDataType: OBJ_FILE
-      PolygonMode: Fill
-    MaterialComponent:
-      BaseColor: [0.392156839, 0.392156839, 0.392156839, 1]
-      Metallic: 1
-      Roughness: 0
-      UsesTexture: false
-      EmissiveFactor: [0, 0, 0, 0]
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      UsesVideoSource: false
-  - Entity: 13333367337533798236
-    TagComponent:
-      Tag: Coordinates
-    TransformComponent:
-      Position: [0, 0, 0]
+      Position: [0, 0, 1.89999998]
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
-      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/coordinates/coordinates.obj
-      MeshDataType: OBJ_FILE
-      PolygonMode: Fill
-    MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
-      Metallic: 0.527999997
-      Roughness: 0
-      UsesTexture: false
-      EmissiveFactor: [0, 0, 0, 0]
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      UsesVideoSource: false
-  - Entity: 12438886385810018527
-    Parent: 12122277407116204119
-    TagComponent:
-      Tag: Right
-    TransformComponent:
-      Position: [0, -1, 1]
-      Rotation: [0.707106769, 0.707106769, 0, 0]
-      Scale: [3, 2, 1]
-    MeshComponent:
       ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/plane.obj
       MeshDataType: OBJ_FILE
       PolygonMode: Fill
     MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
-      Metallic: 1
-      Roughness: 1
-      UsesTexture: false
-      EmissiveFactor: [0, 0, 0, 0]
+      BaseColor: [1, 1, 1, 1]
+      Emission: 0.469999999
+      Diffuse: 0
+      Specular: 0
+      PhongExponent: 32
       VertexShader: defaultBasic.vert
       FragmentShader: defaultPhongLight.frag
-      UsesVideoSource: false
-  - Entity: 14873150805558366307
-    Parent: 12122277407116204119
-    TagComponent:
-      Tag: Top
-    TransformComponent:
-      Position: [0, 0, 2]
-      Rotation: [1, 0, 0, 0]
-      Scale: [3, 2, 1]
-    MeshComponent:
-      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/plane.obj
-      MeshDataType: OBJ_FILE
-      PolygonMode: Fill
-    MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
-      Metallic: 1
-      Roughness: 1
-      UsesTexture: false
-      EmissiveFactor: [0, 0, 0, 0]
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      UsesVideoSource: false
+      AlbedoTexturePath: default.png
   - Entity: 744368915067621014
     Parent: 12122277407116204119
     TagComponent:
@@ -190,44 +74,160 @@ Entities:
       PhongExponents:
         - 32
         - 32
-  - Entity: 12364488892589209224
+  - Entity: 14873150805558366307
     Parent: 12122277407116204119
     TagComponent:
-      Tag: RoofLight
+      Tag: Top
     TransformComponent:
-      Position: [0, 0, 1.89999998]
+      Position: [0, 0, 2]
       Rotation: [1, 0, 0, 0]
-      Scale: [1, 1, 1]
+      Scale: [3, 2, 1]
     MeshComponent:
       ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/plane.obj
       MeshDataType: OBJ_FILE
       PolygonMode: Fill
     MaterialComponent:
-      BaseColor: [1, 1, 1, 1]
-      Metallic: 0
-      Roughness: 0
-      UsesTexture: false
-      EmissiveFactor: [0, 0, 0, 0]
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0
+      Specular: 0
+      PhongExponent: 32
       VertexShader: defaultBasic.vert
       FragmentShader: defaultPhongLight.frag
-      UsesVideoSource: false
-  - Entity: 1151602748887213009
+      AlbedoTexturePath: default.png
+  - Entity: 12438886385810018527
+    Parent: 12122277407116204119
     TagComponent:
-      Tag: PlaneObject
+      Tag: Right
     TransformComponent:
-      Position: [-0.5, 0.600000024, 0.899999976]
-      Rotation: [0.959273458, 0.262427509, 0.100823708, -0.0275822431]
-      Scale: [0.300000012, 0.300000012, 1]
+      Position: [0, -1, 1]
+      Rotation: [0.707106769, 0.707106769, 0, 0]
+      Scale: [3, 2, 1]
     MeshComponent:
-      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/quad.obj
+      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/plane.obj
       MeshDataType: OBJ_FILE
       PolygonMode: Fill
     MaterialComponent:
       BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
-      Metallic: 0.44600001
-      Roughness: 0.510999978
-      UsesTexture: false
-      EmissiveFactor: [0, 0, 0, 0]
+      Emission: 0
+      Diffuse: 0.430000007
+      Specular: 0.769999981
+      PhongExponent: 32
       VertexShader: defaultBasic.vert
       FragmentShader: defaultPhongLight.frag
-      UsesVideoSource: false
+      AlbedoTexturePath: default.png
+  - Entity: 13333367337533798236
+    TagComponent:
+      Tag: Coordinates
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/coordinates/coordinates.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: -0.0199999996
+      Diffuse: 0.230000004
+      Specular: 1.01999998
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 6664554649906565740
+    Parent: 12122277407116204119
+    TagComponent:
+      Tag: Back
+    TransformComponent:
+      Position: [-1.5, 0, 1]
+      Rotation: [0.707228839, 0, 0.706984699, 0]
+      Scale: [2, 2, 1]
+    MeshComponent:
+      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/plane.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.392156839, 0.392156839, 0.392156839, 1]
+      Emission: 0
+      Diffuse: 0
+      Specular: 0.330000013
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 7068684109123369578
+    TagComponent:
+      Tag: Camera
+    TransformComponent:
+      Position: [2.5, 0, 0.899999976]
+      Rotation: [0.494736731, -0.494736731, 0.505208433, -0.505208433]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      MeshDataType: CAMERA_GIZMO_PINHOLE
+      PolygonMode: Line
+    CameraComponent:
+      CameraType: PINHOLE
+      PinHoleParameters:
+        Height: 688
+        Width: 996
+        Fx: 600
+        Fy: 600
+        Cx: 498
+        Cy: 344
+  - Entity: 8793289382359994507
+    Parent: 12122277407116204119
+    TagComponent:
+      Tag: Bottom
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [3, 2, 1]
+    MeshComponent:
+      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/plane.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 1
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 12122277407116204119
+    TagComponent:
+      Tag: Cornell Shell
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    VisibleComponent:
+      Visible: true
+    GroupComponent:
+      {}
+    GroupComponent:
+      ColmapPath: ""
+  - Entity: 1343292866250527671
+    Parent: 12122277407116204119
+    TagComponent:
+      Tag: Left
+    TransformComponent:
+      Position: [0, 1, 1]
+      Rotation: [0.707106769, 0.707106769, 0, 0]
+      Scale: [3, 2, 1]
+    MeshComponent:
+      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/plane.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.430000007
+      Specular: 0.829999983
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
