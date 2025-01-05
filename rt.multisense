@@ -1,49 +1,13 @@
 Scene: Scene name
 Base Path: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository
 Entities:
-  - Entity: 1343292866250527671
-    Parent: 12122277407116204119
+  - Entity: 3874031503768088309
     TagComponent:
-      Tag: Left
+      Tag: CubeFront
     TransformComponent:
-      Position: [0, 1, 1]
-      Rotation: [0.707106769, 0.707106769, 0, 0]
-      Scale: [3, 2, 1]
-    MeshComponent:
-      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
-      RelativeModelPath: plane.obj
-      MeshDataType: OBJ_FILE
-      PolygonMode: Fill
-    MaterialComponent:
-      BaseColor: [0.284313738, 0.347462595, 1, 1]
-      Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 12122277407116204119
-    TagComponent:
-      Tag: Cornell Shell
-    TransformComponent:
-      Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
-      Scale: [1, 1, 1]
-    VisibleComponent:
-      Visible: true
-    GroupComponent:
-      {}
-    GroupComponent:
-      {}
-  - Entity: 8793289382359994507
-    Parent: 12122277407116204119
-    TagComponent:
-      Tag: Bottom
-    TransformComponent:
-      Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
-      Scale: [3, 2, 1]
+      Position: [-0.899999976, -0.5, 0.699999988]
+      Rotation: [0.977045596, 0, 0.213030383, 0]
+      Scale: [0.800000012, 0.600000024, 1]
     MeshComponent:
       ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
       RelativeModelPath: plane.obj
@@ -51,70 +15,6 @@ Entities:
       PolygonMode: Fill
     MaterialComponent:
       BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
-      Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 7068684109123369578
-    TagComponent:
-      Tag: Camera
-    TransformComponent:
-      Position: [2.5, 0, 1]
-      Rotation: [0.49999997, 0.49999997, 0.49999997, 0.49999997]
-      Scale: [1, 1, 1]
-    MeshComponent:
-      MeshDataType: CAMERA_GIZMO_PINHOLE
-      PolygonMode: Line
-    CameraComponent:
-      CameraType: PINHOLE
-      PinHoleParameters:
-        Height: 2400
-        Width: 3840
-        Fx: 2400
-        Fy: 2400
-        Cx: 1920
-        Cy: 1200
-        Focal Length: 50
-        Aperture: 4
-  - Entity: 6664554649906565740
-    Parent: 12122277407116204119
-    TagComponent:
-      Tag: Back
-    TransformComponent:
-      Position: [-1.5, 0, 1]
-      Rotation: [0.707228839, 0, 0.706984699, 0]
-      Scale: [2, 2, 1]
-    MeshComponent:
-      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
-      RelativeModelPath: plane.obj
-      MeshDataType: OBJ_FILE
-      PolygonMode: Fill
-    MaterialComponent:
-      BaseColor: [1, 1, 1, 1]
-      Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 1151602748887213009
-    TagComponent:
-      Tag: CubeBack
-    TransformComponent:
-      Position: [-0.400000006, 0.600000024, 0.349999994]
-      Rotation: [0.96966815, 0.191999465, 0.148380086, -0.0293800049]
-      Scale: [0.649999976, 0.649999976, 0.25]
-    MeshComponent:
-      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
-      RelativeModelPath: plane.obj
-      MeshDataType: OBJ_FILE
-      PolygonMode: Fill
-    MaterialComponent:
-      BaseColor: [1, 1, 1, 1]
       Emission: 0
       Diffuse: 0
       Specular: 1
@@ -122,46 +22,24 @@ Entities:
       VertexShader: defaultBasic.vert
       FragmentShader: defaultPhongLight.frag
       AlbedoTexturePath: default.png
-  - Entity: 12438886385810018527
+  - Entity: 12364488892589209224
     Parent: 12122277407116204119
     TagComponent:
-      Tag: Right
+      Tag: RoofLight
     TransformComponent:
-      Position: [0, -1, 1]
-      Rotation: [0.707106769, -0.707106769, -0, 0]
-      Scale: [3, 2, 1]
+      Position: [-1.28999996, -0.889999986, 1.79999995]
+      Rotation: [0.0951695219, 0.229759544, 0.370660722, -0.894854128]
+      Scale: [0.100000001, 0.100000001, 0.100000001]
     MeshComponent:
       ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
       RelativeModelPath: plane.obj
       MeshDataType: OBJ_FILE
       PolygonMode: Fill
     MaterialComponent:
-      BaseColor: [1, 0.25, 0.25, 1]
-      Emission: 0
-      Diffuse: 0.230000004
-      Specular: 0.769999981
-      PhongExponent: 32
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 14873150805558366307
-    Parent: 12122277407116204119
-    TagComponent:
-      Tag: Top
-    TransformComponent:
-      Position: [0, 0, 2]
-      Rotation: [-4.37113883e-08, 1, 0, 0]
-      Scale: [3, 2, 1]
-    MeshComponent:
-      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
-      RelativeModelPath: plane.obj
-      MeshDataType: OBJ_FILE
-      PolygonMode: Fill
-    MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
-      Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
+      BaseColor: [1, 1, 1, 1]
+      Emission: 0.00999999978
+      Diffuse: 0
+      Specular: 0
       PhongExponent: 32
       VertexShader: defaultBasic.vert
       FragmentShader: defaultPhongLight.frag
@@ -199,35 +77,14 @@ Entities:
       PhongExponents:
         - 32
         - 32
-  - Entity: 12364488892589209224
+  - Entity: 14873150805558366307
     Parent: 12122277407116204119
     TagComponent:
-      Tag: RoofLight
+      Tag: Top
     TransformComponent:
-      Position: [-1.28999996, -0.889999986, 1.79999995]
-      Rotation: [0.0951695219, 0.229759544, 0.370660722, -0.894854128]
-      Scale: [0.100000001, 0.100000001, 0.100000001]
-    MeshComponent:
-      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
-      RelativeModelPath: plane.obj
-      MeshDataType: OBJ_FILE
-      PolygonMode: Fill
-    MaterialComponent:
-      BaseColor: [1, 1, 1, 1]
-      Emission: 0.00999999978
-      Diffuse: 0
-      Specular: 0
-      PhongExponent: 32
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 3874031503768088309
-    TagComponent:
-      Tag: CubeFront
-    TransformComponent:
-      Position: [-0.899999976, -0.5, 0.699999988]
-      Rotation: [0.977045596, 0, 0.213030383, 0]
-      Scale: [0.800000012, 0.600000024, 1]
+      Position: [0, 0, 2]
+      Rotation: [-4.37113883e-08, 1, 0, 0]
+      Scale: [3, 2, 1]
     MeshComponent:
       ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
       RelativeModelPath: plane.obj
@@ -236,8 +93,151 @@ Entities:
     MaterialComponent:
       BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
       Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 12438886385810018527
+    Parent: 12122277407116204119
+    TagComponent:
+      Tag: Right
+    TransformComponent:
+      Position: [0, -1, 1]
+      Rotation: [0.707106769, -0.707106769, -0, 0]
+      Scale: [3, 2, 1]
+    MeshComponent:
+      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
+      RelativeModelPath: plane.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [1, 0.25, 0.25, 1]
+      Emission: 0
+      Diffuse: 0.230000004
+      Specular: 0.769999981
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 1151602748887213009
+    TagComponent:
+      Tag: CubeBack
+    TransformComponent:
+      Position: [-0.400000006, 0.600000024, 0.349999994]
+      Rotation: [0.96966815, 0.191999465, 0.148380086, -0.0293800049]
+      Scale: [0.649999976, 0.649999976, 0.25]
+    MeshComponent:
+      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
+      RelativeModelPath: plane.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [1, 1, 1, 1]
+      Emission: 0
       Diffuse: 0
       Specular: 1
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 6664554649906565740
+    Parent: 12122277407116204119
+    TagComponent:
+      Tag: Back
+    TransformComponent:
+      Position: [-1.5, 0, 1]
+      Rotation: [0.707228839, 0, 0.706984699, 0]
+      Scale: [2, 2, 1]
+    MeshComponent:
+      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
+      RelativeModelPath: plane.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [1, 1, 1, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 7068684109123369578
+    TagComponent:
+      Tag: Camera
+    TransformComponent:
+      Position: [2.5, 0, 1]
+      Rotation: [0.49999997, 0.49999997, 0.49999997, 0.49999997]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      MeshDataType: CAMERA_GIZMO_PINHOLE
+      PolygonMode: Line
+    CameraComponent:
+      CameraType: PINHOLE
+      PinHoleParameters:
+        Height: 600
+        Width: 960
+        Fx: 600
+        Fy: 600
+        Cx: 480
+        Cy: 300
+        Focal Length: 50
+        Aperture: 4
+  - Entity: 8793289382359994507
+    Parent: 12122277407116204119
+    TagComponent:
+      Tag: Bottom
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [3, 2, 1]
+    MeshComponent:
+      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
+      RelativeModelPath: plane.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 12122277407116204119
+    TagComponent:
+      Tag: Cornell Shell
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    VisibleComponent:
+      Visible: true
+    GroupComponent:
+      {}
+    GroupComponent:
+      {}
+  - Entity: 1343292866250527671
+    Parent: 12122277407116204119
+    TagComponent:
+      Tag: Left
+    TransformComponent:
+      Position: [0, 1, 1]
+      Rotation: [0.707106769, 0.707106769, 0, 0]
+      Scale: [3, 2, 1]
+    MeshComponent:
+      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
+      RelativeModelPath: plane.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.284313738, 0.347462595, 1, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
       PhongExponent: 32
       VertexShader: defaultBasic.vert
       FragmentShader: defaultPhongLight.frag
