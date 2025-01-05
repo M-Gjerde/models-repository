@@ -28,7 +28,7 @@ Entities:
       Tag: RoofLight
     TransformComponent:
       Position: [-1.28999996, -0.889999986, 1.79999995]
-      Rotation: [0.0951695219, 0.229759544, 0.370660722, -0.894854128]
+      Rotation: [-0.0951695591, -0.229759514, -0.370660752, 0.894854128]
       Scale: [0.100000001, 0.100000001, 0.100000001]
     MeshComponent:
       ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
@@ -177,14 +177,14 @@ Entities:
     CameraComponent:
       CameraType: PINHOLE
       PinHoleParameters:
-        Height: 600
-        Width: 960
-        Fx: 600
-        Fy: 600
-        Cx: 480
-        Cy: 300
-        Focal Length: 50
-        Aperture: 4
+        Height: 1200
+        Width: 1920
+        Fx: 1200
+        Fy: 1200
+        Cx: 960
+        Cy: 600
+        Focal Length: 24
+        Aperture: 0.356999993
   - Entity: 8793289382359994507
     Parent: 12122277407116204119
     TagComponent:
@@ -236,6 +236,27 @@ Entities:
     MaterialComponent:
       BaseColor: [0.284313738, 0.347462595, 1, 1]
       Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 17533366584792738667
+    TagComponent:
+      Tag: Empty Entity
+    TransformComponent:
+      Position: [0, 0.800000012, 1.99000001]
+      Rotation: [-4.37113883e-08, -0, 1, -0]
+      Scale: [0.100000001, 0.100000001, 1]
+    MeshComponent:
+      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
+      RelativeModelPath: plane.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0.0399999991
       Diffuse: 0.5
       Specular: 0.5
       PhongExponent: 32
