@@ -1,0 +1,122 @@
+Scene: Scene name
+Base Path: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository
+Entities:
+  - Entity: 1433678418561255713
+    TagComponent:
+      Tag: MeshLight
+    TransformComponent:
+      Position: [0.899999976, -0.200000003, 2.20000005]
+      Rotation: [-4.37113883e-08, -0, 1, -0]
+      Scale: [0.100000001, 0.100000001, 1]
+    MeshComponent:
+      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
+      RelativeModelPath: plane.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 2
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 9306267206623070335
+    TagComponent:
+      Tag: MeshScene
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [0.707106769, 0.707106769, 0, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/simple_gray_scene_reconstruction.obj
+      RelativeModelPath: simple_gray_scene_reconstruction.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 17662787168910766835
+    TagComponent:
+      Tag: Camera
+    TransformComponent:
+      Position: [0.699999988, -3.4000001, 2.4000001]
+      Rotation: [-2.25783889e-08, -3.74286238e-08, 0.516533315, -0.856267095]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      MeshDataType: CAMERA_GIZMO_PINHOLE
+      PolygonMode: Line
+    CameraComponent:
+      CameraType: PINHOLE
+      PinHoleParameters:
+        Height: 720
+        Width: 1280
+        Fx: 1280
+        Fy: 720
+        Cx: 640
+        Cy: 360
+        Focal Length: 10
+        Aperture: 4
+  - Entity: 15651962318161565069
+    TagComponent:
+      Tag: 2DGS
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    GaussianComponent2DGS:
+      Positions:
+        - [0, 0, 3.0999999]
+        - [0, 0, 0]
+      Normals:
+        - [0, 0, 1]
+        - [0, 0, 1]
+      Scales:
+        - [0.153999999, 0.150000006]
+        - [10, 10]
+      Emissions:
+        - 2
+        - 0
+      Opacities:
+        - 1
+        - 1
+      Colors:
+        - 1
+        - 1
+      Diffuse:
+        - 0.5
+        - 0.5
+      Specular:
+        - 0.5
+        - 0.5
+      PhongExponents:
+        - 32
+        - 32
+  - Entity: 139607714512532712
+    TagComponent:
+      Tag: Plane
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [16.2999992, 20, 1]
+    MeshComponent:
+      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
+      RelativeModelPath: plane.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
