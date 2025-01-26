@@ -1,0 +1,74 @@
+Scene: Scene name
+Base Path: /home/magnus/crl/multisense_viewer/Resources/models-repository
+Entities:
+  - Entity: 13303103811669544027
+    TagComponent:
+      Tag: Camera
+    TransformComponent:
+      Position: [5.4000001, 0, 0]
+      Rotation: [0.502611101, 0.497375131, 0.502611101, 0.497375131]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      MeshDataType: CAMERA_GIZMO_PINHOLE
+      PolygonMode: Line
+    CameraComponent:
+      CameraType: PINHOLE
+      RenderFromViewpoint: true
+      FlipX: true
+      FlipY: true
+      PinHoleParameters:
+        Height: 600
+        Width: 960
+        Fx: 600
+        Fy: 600
+        Cx: 480
+        Cy: 300
+        Focal Length: 10
+        Aperture: 4
+  - Entity: 9275920839416069452
+    TagComponent:
+      Tag: Sphere
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [0.707106769, 0, 0.707106769, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/disk.obj
+      RelativeModelPath: disk.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 1
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 15396318409592555331
+    TagComponent:
+      Tag: 2DGS
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    GaussianComponent2DGS:
+      Positions:
+        - [0, -2.5, 0]
+      Normals:
+        - [-1, 0, 0]
+      Scales:
+        - [0.5, 0.5]
+      Emissions:
+        - 1
+      Opacities:
+        - 1
+      Colors:
+        - 1
+      Diffuse:
+        - 0.5
+      Specular:
+        - 0.5
+      PhongExponents:
+        - 32

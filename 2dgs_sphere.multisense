@@ -1,5 +1,5 @@
 Scene: Scene name
-Base Path: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository
+Base Path: /home/magnus/crl/multisense_viewer/Resources/models-repository
 Entities:
   - Entity: 17388039636272584444
     TagComponent:
@@ -9,7 +9,7 @@ Entities:
       Rotation: [1, 0, 0, 0]
       Scale: [5, 5, 1]
     MeshComponent:
-      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
+      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/plane.obj
       RelativeModelPath: plane.obj
       MeshDataType: OBJ_FILE
       PolygonMode: Fill
@@ -30,7 +30,7 @@ Entities:
       Rotation: [1, 0, 0, 0]
       Scale: [0.5, 0.5, 0.5]
     MeshComponent:
-      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/icosphere.obj
+      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/icosphere.obj
       RelativeModelPath: icosphere.obj
       MeshDataType: OBJ_FILE
       PolygonMode: Fill
@@ -51,7 +51,7 @@ Entities:
       Rotation: [-4.37113883e-08, -0, 1, -0]
       Scale: [0.100000001, 0.100000001, 1]
     MeshComponent:
-      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
+      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/plane.obj
       RelativeModelPath: plane.obj
       MeshDataType: OBJ_FILE
       PolygonMode: Fill
@@ -1228,20 +1228,23 @@ Entities:
     TagComponent:
       Tag: Camera
     TransformComponent:
-      Position: [3.9000001, 0, 1.70000005]
-      Rotation: [0.564474642, -0.423819572, 0.425301552, -0.56644845]
+      Position: [6.69999981, 0, 2.5]
+      Rotation: [0.570138335, 0.420342237, 0.418877542, 0.568151653]
       Scale: [1, 1, 1]
     MeshComponent:
       MeshDataType: CAMERA_GIZMO_PINHOLE
       PolygonMode: Line
     CameraComponent:
       CameraType: PINHOLE
+      RenderFromViewpoint: true
+      FlipX: true
+      FlipY: true
       PinHoleParameters:
-        Height: 720
-        Width: 1280
-        Fx: 1280
-        Fy: 720
-        Cx: 640
-        Cy: 360
+        Height: 600
+        Width: 960
+        Fx: 600
+        Fy: 600
+        Cx: 480
+        Cy: 300
         Focal Length: 10
         Aperture: 4
