@@ -1,5 +1,5 @@
 Scene: Scene name
-Base Path: /home/magnus/crl/multisense_viewer/Resources/models-repository
+Base Path: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository
 Entities:
   - Entity: 17388039636272584444
     TagComponent:
@@ -9,7 +9,7 @@ Entities:
       Rotation: [1, 0, 0, 0]
       Scale: [5, 5, 1]
     MeshComponent:
-      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/plane.obj
+      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
       RelativeModelPath: plane.obj
       MeshDataType: OBJ_FILE
       PolygonMode: Fill
@@ -30,7 +30,7 @@ Entities:
       Rotation: [1, 0, 0, 0]
       Scale: [0.5, 0.5, 0.5]
     MeshComponent:
-      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/icosphere.obj
+      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/icosphere.obj
       RelativeModelPath: icosphere.obj
       MeshDataType: OBJ_FILE
       PolygonMode: Fill
@@ -51,7 +51,7 @@ Entities:
       Rotation: [-4.37113883e-08, -0, 1, -0]
       Scale: [0.100000001, 0.100000001, 1]
     MeshComponent:
-      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/plane.obj
+      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
       RelativeModelPath: plane.obj
       MeshDataType: OBJ_FILE
       PolygonMode: Fill
@@ -1229,7 +1229,7 @@ Entities:
       Tag: Camera
     TransformComponent:
       Position: [6.69999981, 0, 2.5]
-      Rotation: [0.570138335, 0.420342237, 0.418877542, 0.568151653]
+      Rotation: [0.559254766, -0.430684149, 0.432190061, -0.561210334]
       Scale: [1, 1, 1]
     MeshComponent:
       MeshDataType: CAMERA_GIZMO_PINHOLE

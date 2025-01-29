@@ -1,5 +1,5 @@
 Scene: Scene name
-Base Path: /home/magnus/crl/multisense_viewer/Resources/models-repository
+Base Path: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository
 Entities:
   - Entity: 17388039636272584444
     TagComponent:
@@ -9,7 +9,7 @@ Entities:
       Rotation: [1, 0, 0, 0]
       Scale: [10, 10, 1]
     MeshComponent:
-      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/plane.obj
+      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
       RelativeModelPath: plane.obj
       MeshDataType: OBJ_FILE
       PolygonMode: Fill
@@ -30,7 +30,7 @@ Entities:
       Rotation: [0.719339788, 0, 0, 0.694658399]
       Scale: [1, 1, 1]
     MeshComponent:
-      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/marble.obj
+      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/marble.obj
       RelativeModelPath: marble.obj
       MeshDataType: OBJ_FILE
       PolygonMode: Fill
@@ -51,7 +51,7 @@ Entities:
       Rotation: [0.294040293, -0.955793023, 0, 0]
       Scale: [5, 5, 1]
     MeshComponent:
-      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/plane.obj
+      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
       RelativeModelPath: plane.obj
       MeshDataType: OBJ_FILE
       PolygonMode: Fill
@@ -15088,14 +15088,17 @@ Entities:
     TagComponent:
       Tag: Camera
     TransformComponent:
-      Position: [0.100000001, -6, 4.5999999]
-      Rotation: [0.0258865021, -0.0177912991, 0.566126764, -0.823719501]
+      Position: [0.100000001, -5.4000001, 4.80000019]
+      Rotation: [0.835725904, 0.548969269, 0.00766555546, 0.0116696935]
       Scale: [1, 1, 1]
     MeshComponent:
       MeshDataType: CAMERA_GIZMO_PINHOLE
       PolygonMode: Line
     CameraComponent:
       CameraType: PINHOLE
+      RenderFromViewpoint: true
+      FlipX: true
+      FlipY: true
       PinHoleParameters:
         Height: 600
         Width: 960
