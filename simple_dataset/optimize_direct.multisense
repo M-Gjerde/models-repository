@@ -1,20 +1,112 @@
 Scene: Scene name
-Base Path: /home/magnus/crl/multisense_viewer/Resources/models-repository
+Base Path: /home/magnus/crl/multisense_viewer/Resources/models-repository/simple_dataset
 Entities:
-  - Entity: 9060502116903820510
+  - Entity: 13303103811669544027
     TagComponent:
-      Tag: GT_DISK
+      Tag: Camera1
     TransformComponent:
-      Position: [0, 0, 0]
+      Position: [0.699999988, 6.19999981, 0]
+      Rotation: [0.0554789491, 0.0554789491, 0.704926968, 0.704926968]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      MeshDataType: CAMERA_GIZMO_PINHOLE
+      PolygonMode: Line
+    CameraComponent:
+      CameraType: PINHOLE
+      RenderFromViewpoint: false
+      FlipX: true
+      FlipY: true
+      PinHoleParameters:
+        Height: 600
+        Width: 600
+        Fx: 600
+        Fy: 600
+        Cx: 300
+        Cy: 300
+        Focal Length: 10
+        Aperture: 4
+    MaterialComponent:
+      BaseColor: [1, 1, 1, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 9275920839416069452
+    TagComponent:
+      Tag: Disk
+    TransformComponent:
+      Position: [0.00270356564, -0.00270378124, 0.0326339379]
       Rotation: [0.65328145, -0.65328145, 0.270598054, -0.270598054]
       Scale: [1, 1, 1]
     MeshComponent:
-      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/disk.obj
+      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/simple_dataset/disk.obj
       RelativeModelPath: disk.obj
       MeshDataType: OBJ_FILE
       PolygonMode: Fill
     MaterialComponent:
-      BaseColor: [1, 0, 0, 0.235294119]
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 1
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 15396318409592555331
+    TagComponent:
+      Tag: 2DGS
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    GaussianComponent2DGS:
+      Positions:
+        - [0.00270356564, -0.00270378124, 0.0326339379]
+      Normals:
+        - [1, 1, 0]
+      Scales:
+        - [1, 1]
+      Emissions:
+        - 1
+      Opacities:
+        - 1
+      Colors:
+        - 1
+      Diffuse:
+        - 0.5
+      Specular:
+        - 0.5
+      PhongExponents:
+        - 32
+  - Entity: 5831296337768004211
+    TagComponent:
+      Tag: Camera2
+    TransformComponent:
+      Position: [6.0999999, 1.60000002, 0]
+      Rotation: [0.421721041, 0.442850679, 0.572981775, 0.54564321]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      MeshDataType: CAMERA_GIZMO_PINHOLE
+      PolygonMode: Line
+    CameraComponent:
+      CameraType: PINHOLE
+      RenderFromViewpoint: false
+      FlipX: false
+      FlipY: false
+      PinHoleParameters:
+        Height: 600
+        Width: 600
+        Fx: 600
+        Fy: 600
+        Cx: 300
+        Cy: 300
+        Focal Length: 10
+        Aperture: 4
+    MaterialComponent:
+      BaseColor: [1, 1, 1, 1]
       Emission: 0
       Diffuse: 0.5
       Specular: 0.5
@@ -55,112 +147,20 @@ Entities:
       VertexShader: defaultBasic.vert
       FragmentShader: defaultPhongLight.frag
       AlbedoTexturePath: default.png
-  - Entity: 5831296337768004211
+  - Entity: 9060502116903820510
     TagComponent:
-      Tag: Camera2
-    TransformComponent:
-      Position: [6.0999999, 1.60000002, 0]
-      Rotation: [0.421721041, 0.442850679, 0.572981775, 0.54564321]
-      Scale: [1, 1, 1]
-    MeshComponent:
-      MeshDataType: CAMERA_GIZMO_PINHOLE
-      PolygonMode: Line
-    CameraComponent:
-      CameraType: PINHOLE
-      RenderFromViewpoint: false
-      FlipX: false
-      FlipY: false
-      PinHoleParameters:
-        Height: 600
-        Width: 600
-        Fx: 600
-        Fy: 600
-        Cx: 300
-        Cy: 300
-        Focal Length: 10
-        Aperture: 4
-    MaterialComponent:
-      BaseColor: [1, 1, 1, 1]
-      Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 15396318409592555331
-    TagComponent:
-      Tag: 2DGS
+      Tag: GT_DISK
     TransformComponent:
       Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
-      Scale: [1, 1, 1]
-    GaussianComponent2DGS:
-      Positions:
-        - [-0.89331305, -0.806687236, -0.194522649]
-      Normals:
-        - [1, 1, 0]
-      Scales:
-        - [1, 1]
-      Emissions:
-        - 1
-      Opacities:
-        - 1
-      Colors:
-        - 1
-      Diffuse:
-        - 0.5
-      Specular:
-        - 0.5
-      PhongExponents:
-        - 32
-  - Entity: 9275920839416069452
-    TagComponent:
-      Tag: Disk
-    TransformComponent:
-      Position: [-0.89331305, -0.806687236, -0.194522649]
       Rotation: [0.65328145, -0.65328145, 0.270598054, -0.270598054]
       Scale: [1, 1, 1]
     MeshComponent:
-      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/disk.obj
+      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/simple_dataset/disk.obj
       RelativeModelPath: disk.obj
       MeshDataType: OBJ_FILE
       PolygonMode: Fill
     MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
-      Emission: 1
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 13303103811669544027
-    TagComponent:
-      Tag: Camera1
-    TransformComponent:
-      Position: [0.699999988, 6.19999981, 0]
-      Rotation: [0.0554789491, 0.0554789491, 0.704926968, 0.704926968]
-      Scale: [1, 1, 1]
-    MeshComponent:
-      MeshDataType: CAMERA_GIZMO_PINHOLE
-      PolygonMode: Line
-    CameraComponent:
-      CameraType: PINHOLE
-      RenderFromViewpoint: false
-      FlipX: true
-      FlipY: true
-      PinHoleParameters:
-        Height: 600
-        Width: 600
-        Fx: 600
-        Fy: 600
-        Cx: 300
-        Cy: 300
-        Focal Length: 10
-        Aperture: 4
-    MaterialComponent:
-      BaseColor: [1, 1, 1, 1]
+      BaseColor: [1, 0, 0, 0.235294119]
       Emission: 0
       Diffuse: 0.5
       Specular: 0.5
