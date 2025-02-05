@@ -1,32 +1,20 @@
 Scene: Scene name
 Base Path: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository
 Entities:
-  - Entity: 13303103811669544027
+  - Entity: 11754196139235704024
     TagComponent:
-      Tag: Camera1
+      Tag: Coordinates
     TransformComponent:
-      Position: [0.699999988, 7.4000001, 0]
-      Rotation: [0.0234442391, 0.0234442391, 0.706718028, 0.706718028]
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
-      MeshDataType: CAMERA_GIZMO_PINHOLE
-      PolygonMode: Line
-    CameraComponent:
-      CameraType: PINHOLE
-      RenderFromViewpoint: false
-      FlipX: true
-      FlipY: true
-      PinHoleParameters:
-        Height: 600
-        Width: 600
-        Fx: 600
-        Fy: 600
-        Cx: 300
-        Cy: 300
-        Focal Length: 10
-        Aperture: 4
+      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/coordinates/coordinates.obj
+      RelativeModelPath: coordinates/coordinates.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
     MaterialComponent:
-      BaseColor: [1, 1, 1, 1]
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
       Emission: 0
       Diffuse: 0.5
       Specular: 0.5
@@ -34,79 +22,20 @@ Entities:
       VertexShader: defaultBasic.vert
       FragmentShader: defaultPhongLight.frag
       AlbedoTexturePath: default.png
-  - Entity: 9275920839416069452
+  - Entity: 9060502116903820510
     TagComponent:
-      Tag: Disk
+      Tag: GT_DISK
     TransformComponent:
-      Position: [0, 0, 0]
+      Position: [0, 0, 19.2000008]
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
-      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/disk.obj
+      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/disk.obj
       RelativeModelPath: disk.obj
       MeshDataType: OBJ_FILE
       PolygonMode: Fill
     MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
-      Emission: 1
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 15396318409592555331
-    TagComponent:
-      Tag: 2DGS
-    TransformComponent:
-      Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
-      Scale: [1, 1, 1]
-    GaussianComponent2DGS:
-      Positions:
-        - [0, 0, 0]
-      Normals:
-        - [0, 0, 1]
-      Scales:
-        - [1, 1]
-      Emissions:
-        - 1
-      Opacities:
-        - 1
-      Colors:
-        - 1
-      Diffuse:
-        - 0.5
-      Specular:
-        - 0.5
-      PhongExponents:
-        - 32
-  - Entity: 5831296337768004211
-    TagComponent:
-      Tag: Camera2
-    TransformComponent:
-      Position: [-8.89999962, 0, 0]
-      Rotation: [0.508576989, 0.512139976, -0.491124511, -0.487707734]
-      Scale: [1, 1, 1]
-    MeshComponent:
-      MeshDataType: CAMERA_GIZMO_PINHOLE
-      PolygonMode: Line
-    CameraComponent:
-      CameraType: PINHOLE
-      RenderFromViewpoint: false
-      FlipX: false
-      FlipY: false
-      PinHoleParameters:
-        Height: 600
-        Width: 600
-        Fx: 600
-        Fy: 600
-        Cx: 300
-        Cy: 300
-        Focal Length: 10
-        Aperture: 4
-    MaterialComponent:
-      BaseColor: [1, 1, 1, 1]
+      BaseColor: [1, 0, 0, 0.235294119]
       Emission: 0
       Diffuse: 0.5
       Specular: 0.5
@@ -147,42 +76,47 @@ Entities:
       VertexShader: defaultBasic.vert
       FragmentShader: defaultPhongLight.frag
       AlbedoTexturePath: default.png
-  - Entity: 9060502116903820510
+  - Entity: 15396318409592555331
     TagComponent:
-      Tag: GT_DISK
+      Tag: 2DGS
     TransformComponent:
-      Position: [0, 0, 19.2000008]
+      Position: [0, 0, 0]
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
-    MeshComponent:
-      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/disk.obj
-      RelativeModelPath: disk.obj
-      MeshDataType: OBJ_FILE
-      PolygonMode: Fill
-    MaterialComponent:
-      BaseColor: [1, 0, 0, 0.235294119]
-      Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 11754196139235704024
+    GaussianComponent2DGS:
+      Positions:
+        - [0, 0, 0]
+      Normals:
+        - [0, 0, 1]
+      Scales:
+        - [1, 1]
+      Emissions:
+        - 1
+      Opacities:
+        - 1
+      Colors:
+        - 1
+      Diffuse:
+        - 0.5
+      Specular:
+        - 0.5
+      PhongExponents:
+        - 32
+  - Entity: 9275920839416069452
     TagComponent:
-      Tag: Coordinates
+      Tag: Disk
     TransformComponent:
       Position: [0, 0, 0]
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
-      ModelPath: /home/magnus/crl/multisense_viewer/Resources/models-repository/coordinates/coordinates.obj
-      RelativeModelPath: coordinates/coordinates.obj
+      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/disk.obj
+      RelativeModelPath: disk.obj
       MeshDataType: OBJ_FILE
       PolygonMode: Fill
     MaterialComponent:
       BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
-      Emission: 0
+      Emission: 1
       Diffuse: 0.5
       Specular: 0.5
       PhongExponent: 32
