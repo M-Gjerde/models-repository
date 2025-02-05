@@ -45,17 +45,17 @@ Entities:
       AlbedoTexturePath: default.png
   - Entity: 1948721059495323927
     TagComponent:
-      Tag: Camera3
+      Tag: Camera1
     TransformComponent:
-      Position: [7.9000001, -1.20000005, 0]
-      Rotation: [0.544047654, 0.544047654, 0.451677054, 0.451677054]
+      Position: [0, -7, 0]
+      Rotation: [0.707106769, 0.707106769, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
       MeshDataType: CAMERA_GIZMO_PINHOLE
       PolygonMode: Line
     CameraComponent:
       CameraType: PINHOLE
-      RenderFromViewpoint: false
+      RenderFromViewpoint: true
       FlipX: false
       FlipY: false
       PinHoleParameters:
@@ -68,7 +68,7 @@ Entities:
         Focal Length: 10
         Aperture: 4
     MaterialComponent:
-      BaseColor: [1, 1, 1, 1]
+      BaseColor: [1, 1, 0, 1]
       Emission: 0
       Diffuse: 0.5
       Specular: 0.5
@@ -87,7 +87,7 @@ Entities:
       Positions:
         - [0, 0, 0]
       Normals:
-        - [0, 0, 1]
+        - [0, 1, 0]
       Scales:
         - [1, 1]
       Emissions:
@@ -107,7 +107,7 @@ Entities:
       Tag: Disk
     TransformComponent:
       Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
+      Rotation: [0.707106769, -0.707106769, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
       ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/disk.obj
