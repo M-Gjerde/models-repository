@@ -1,5 +1,5 @@
 Scene: Scene name
-Base Path: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository
+Base Path: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository
 Entities:
   - Entity: 9964125179309898947
     TagComponent:
@@ -76,15 +76,15 @@ Entities:
       Scale: [1, 1, 1]
     GaussianComponent2DGS:
       Positions:
-        - [2, 0, 0]
-        - [-2, 0, 0]
+        - [3, 0, 0]
+        - [-3, 0, 0]
         - [0, 1, -2]
         - [0, 1, 2]
       Normals:
-        - [0, 1, 0]
-        - [0, 1, 0]
-        - [0, 1, 0]
-        - [0, 1, 0]
+        - [0, -1, 0]
+        - [0, -1, 0]
+        - [0, -1, 0]
+        - [0, -1, 0]
       Scales:
         - [1, 1]
         - [1, 1]
@@ -128,7 +128,7 @@ Entities:
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
-      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/coordinates/coordinates.obj
+      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/coordinates/coordinates.obj
       RelativeModelPath: coordinates/coordinates.obj
       MeshDataType: OBJ_FILE
       PolygonMode: Fill
