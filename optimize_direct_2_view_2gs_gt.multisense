@@ -1,12 +1,12 @@
 Scene: Scene name
 Base Path: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository
 Entities:
-  - Entity: 9964125179309898947
+  - Entity: 4835695829827114461
     TagComponent:
-      Tag: Camera2
+      Tag: Camera3
     TransformComponent:
-      Position: [3, -6.5, 0]
-      Rotation: [0.694349647, 0.694349647, 0.133710667, 0.133710667]
+      Position: [-4, -7, 0]
+      Rotation: [0.693399251, 0.693399251, -0.138554841, -0.138554841]
       Scale: [1, 1, 1]
     MeshComponent:
       MeshDataType: CAMERA_GIZMO_PINHOLE
@@ -27,6 +27,39 @@ Entities:
         Aperture: 4
     MaterialComponent:
       BaseColor: [1, 1, 0, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 9964125179309898947
+    TagComponent:
+      Tag: Camera2
+    TransformComponent:
+      Position: [3, -6.5, 0]
+      Rotation: [0.694349647, 0.694349647, 0.133710667, 0.133710667]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      MeshDataType: CAMERA_GIZMO_PINHOLE
+      PolygonMode: Line
+    CameraComponent:
+      CameraType: PINHOLE
+      RenderFromViewpoint: false
+      FlipX: false
+      FlipY: false
+      PinHoleParameters:
+        Height: 600
+        Width: 600
+        Fx: 600
+        Fy: 600
+        Cx: 300
+        Cy: 300
+        Focal Length: 10
+        Aperture: 4
+    MaterialComponent:
+      BaseColor: [1, 1, 1, 1]
       Emission: 0
       Diffuse: 0.5
       Specular: 0.5
@@ -76,48 +109,30 @@ Entities:
       Scale: [1, 1, 1]
     GaussianComponent2DGS:
       Positions:
-        - [3, 0, 0]
-        - [-3, 0, 0]
-        - [0, 1, -2]
-        - [0, 1, 2]
+        - [2, 0, 0]
+        - [-2, 0, 0]
       Normals:
-        - [0, -1, 0]
-        - [0, -1, 0]
         - [0, -1, 0]
         - [0, -1, 0]
       Scales:
         - [1, 1]
         - [1, 1]
-        - [1, 1]
-        - [1, 1]
       Emissions:
-        - 1
-        - 1
         - 1
         - 1
       Opacities:
         - 1
         - 1
-        - 1
-        - 1
       Colors:
-        - 1
-        - 1
         - 1
         - 1
       Diffuse:
         - 0.5
         - 0.5
-        - 0.5
-        - 0.5
       Specular:
         - 0.5
         - 0.5
-        - 0.5
-        - 0.5
       PhongExponents:
-        - 32
-        - 32
         - 32
         - 32
   - Entity: 11754196139235704024
