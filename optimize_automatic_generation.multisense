@@ -1,42 +1,21 @@
-Scene: Scene name
-Base Path: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository
+Scene: optimize_automatic_generation.multisense
+Base Path: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository
 Entities:
-  - Entity: 11754196139235704024
+  - Entity: 9060502116903820510
     TagComponent:
-      Tag: Coordinates
+      Tag: GT_DISK
     TransformComponent:
-      Position: [0, 0, 0]
+      Position: [0, 0, -2]
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
-      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/coordinates/coordinates.obj
-      RelativeModelPath: coordinates/coordinates.obj
-      MeshDataType: OBJ_FILE
-      PolygonMode: Fill
-    MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
-      Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 9275920839416069452
-    TagComponent:
-      Tag: Disk
-    TransformComponent:
-      Position: [-0.0214525647, -0.0182994995, 0.123539649]
-      Rotation: [1, 0, 0, 0]
-      Scale: [1, 1, 1]
-    MeshComponent:
-      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/disk.obj
+      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/disk.obj
       RelativeModelPath: disk.obj
       MeshDataType: OBJ_FILE
       PolygonMode: Fill
     MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
-      Emission: 1
+      BaseColor: [1, 0.970876634, 0.00980395079, 0.235294119]
+      Emission: 0
       Diffuse: 0.5
       Specular: 0.5
       PhongExponent: 32
@@ -52,7 +31,7 @@ Entities:
       Scale: [1, 1, 1]
     GaussianComponent2DGS:
       Positions:
-        - [-0.0214525647, -0.0182994995, 0.123539649]
+        - [0, 0, -2]
       Normals:
         - [0, 0, 1]
       Scales:
@@ -69,20 +48,20 @@ Entities:
         - 0.5
       PhongExponents:
         - 32
-  - Entity: 9060502116903820510
+  - Entity: 11754196139235704024
     TagComponent:
-      Tag: GT_DISK
+      Tag: Coordinates
     TransformComponent:
-      Position: [0, 0, 19.2000008]
+      Position: [0, 0, 0]
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
-      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/disk.obj
-      RelativeModelPath: disk.obj
+      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/coordinates/coordinates.obj
+      RelativeModelPath: coordinates/coordinates.obj
       MeshDataType: OBJ_FILE
       PolygonMode: Fill
     MaterialComponent:
-      BaseColor: [1, 0, 0, 0.235294119]
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
       Emission: 0
       Diffuse: 0.5
       Specular: 0.5
