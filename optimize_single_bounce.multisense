@@ -1,45 +1,12 @@
 Scene: optimize_single_bounce.multisense
-Base Path: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository
+Base Path: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository
 Entities:
   - Entity: 457444311076012453
     TagComponent:
       Tag: Camera2
     TransformComponent:
       Position: [-7.30000019, -9.10000038, 0]
-      Rotation: [0.707106769, 0.707106769, 0, 0]
-      Scale: [1, 1, 1]
-    MeshComponent:
-      MeshDataType: CAMERA_GIZMO_PINHOLE
-      PolygonMode: Line
-    CameraComponent:
-      CameraType: PINHOLE
-      RenderFromViewpoint: false
-      FlipX: true
-      FlipY: true
-      PinHoleParameters:
-        Height: 600
-        Width: 600
-        Fx: 600
-        Fy: 600
-        Cx: 300
-        Cy: 300
-        Focal Length: 10
-        Aperture: 4
-    MaterialComponent:
-      BaseColor: [1, 1, 1, 1]
-      Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 1948721059495323927
-    TagComponent:
-      Tag: Camera1
-    TransformComponent:
-      Position: [0, -1.29999995, 0]
-      Rotation: [0.703486919, 0.703486919, 0.0714575946, 0.0714575946]
+      Rotation: [0.695266187, 0.695266187, -0.128859967, -0.128859967]
       Scale: [1, 1, 1]
     MeshComponent:
       MeshDataType: CAMERA_GIZMO_PINHOLE
@@ -62,6 +29,39 @@ Entities:
       BaseColor: [1, 1, 0, 1]
       Emission: 0
       Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 1948721059495323927
+    TagComponent:
+      Tag: Camera1
+    TransformComponent:
+      Position: [12.8999996, -15.6999998, 0]
+      Rotation: [0.669382095, 0.669382095, 0.227876231, 0.227876231]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      MeshDataType: CAMERA_GIZMO_PINHOLE
+      PolygonMode: Line
+    CameraComponent:
+      CameraType: PINHOLE
+      RenderFromViewpoint: false
+      FlipX: true
+      FlipY: true
+      PinHoleParameters:
+        Height: 600
+        Width: 600
+        Fx: 600
+        Fy: 600
+        Cx: 300
+        Cy: 300
+        Focal Length: 10
+        Aperture: 4
+    MaterialComponent:
+      BaseColor: [1, 1, 1, 1]
+      Emission: 0
+      Diffuse: 0.5
       Specular: 1
       PhongExponent: 32
       VertexShader: defaultBasic.vert
@@ -76,7 +76,7 @@ Entities:
       Scale: [1, 1, 1]
     GaussianComponent2DGS:
       Positions:
-        - [0, -2.0999999, 0]
+        - [0, -11.6999998, 0]
         - [0, 0, 0]
       Normals:
         - [0, 1, 0]
@@ -85,20 +85,20 @@ Entities:
         - [0.100000001, 0.100000001]
         - [20, 20]
       Emissions:
-        - 3
+        - 0.100000001
         - 0
       Opacities:
         - 0
         - 0
       Diffuse:
         - 0.5
-        - 0
+        - 0.5
       Colors:
         - [0, 1, 0, 0]
         - [1, 1, 1, 1]
       Specular:
         - 0.5
-        - 1
+        - 0.5
       PhongExponents:
         - 32
         - 32
@@ -110,28 +110,9 @@ Entities:
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
-      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/coordinates/coordinates.obj
+      ModelPath: /home/magnus-desktop/CLionProjects/multisense_viewer/Resources/models-repository/coordinates/coordinates.obj
       RelativeModelPath: coordinates/coordinates.obj
       MeshDataType: OBJ_FILE
-      PolygonMode: Fill
-    MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
-      Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 8499515098789257452
-    TagComponent:
-      Tag: Empty Entity
-    TransformComponent:
-      Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
-      Scale: [1, 1, 1]
-    MeshComponent:
-      MeshDataType: CYLINDER
       PolygonMode: Fill
     MaterialComponent:
       BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
