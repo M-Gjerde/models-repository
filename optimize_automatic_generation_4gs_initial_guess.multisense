@@ -1,0 +1,98 @@
+Scene: optimize_automatic_generation_4gs_initial_guess.multisense
+Base Path: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository
+Entities:
+  - Entity: 11754196139235704024
+    TagComponent:
+      Tag: Coordinates
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/coordinates/coordinates.obj
+      RelativeModelPath: coordinates/coordinates.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 15396318409592555331
+    TagComponent:
+      Tag: 2DGS
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    GaussianComponent2DGS:
+      Positions:
+        - [-2, -2, -2]
+        - [2, 2, 0]
+        - [2, -2, -2]
+        - [-2, 2, 0]
+      Normals:
+        - [0, 0, 1]
+        - [0, 0, 1]
+        - [0, 0, 1]
+        - [0, 0, 1]
+      Scales:
+        - [1, 1]
+        - [1, 1]
+        - [1, 1]
+        - [1, 1]
+      Emissions:
+        - 0.00999999978
+        - 0.00999999978
+        - 0.00999999978
+        - 0.00999999978
+      Opacities:
+        - 1.63999999
+        - 1
+        - 1
+        - 1
+      Diffuse:
+        - 0.5
+        - 0.5
+        - 0.5
+        - 0.5
+      Colors:
+        - [1, 1, 1, 1]
+        - [1, 1, 1, 1]
+        - [1, 1, 1, 1]
+        - [1, 1, 1, 1]
+      Specular:
+        - 0.5
+        - 0.5
+        - 0.5
+        - 0.5
+      PhongExponents:
+        - 32
+        - 32
+        - 32
+        - 32
+  - Entity: 9060502116903820510
+    TagComponent:
+      Tag: GT_DISK
+    TransformComponent:
+      Position: [0, 0, -2]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/disk.obj
+      RelativeModelPath: disk.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [1, 0.970876634, 0.00980395079, 0.235294119]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
