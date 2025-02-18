@@ -1,63 +1,33 @@
-Scene: Scene name
+Scene: 2dgs_sphere.multisense
 Base Path: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository
 Entities:
-  - Entity: 17388039636272584444
+  - Entity: 13303103811669544027
     TagComponent:
-      Tag: Plane
+      Tag: Camera1
     TransformComponent:
-      Position: [0, 0, -1]
-      Rotation: [1, 0, 0, 0]
-      Scale: [5, 5, 1]
+      Position: [4.30000019, 0, 2.5]
+      Rotation: [0.612372398, 0.353553414, 0.353553355, 0.612372398]
+      Scale: [1, 1, 1]
     MeshComponent:
-      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
-      RelativeModelPath: plane.obj
-      MeshDataType: OBJ_FILE
-      PolygonMode: Fill
+      MeshDataType: CAMERA_GIZMO_PINHOLE
+      PolygonMode: Line
+    CameraComponent:
+      CameraType: PINHOLE
+      RenderFromViewpoint: true
+      FlipX: true
+      FlipY: true
+      PinHoleParameters:
+        Height: 600
+        Width: 600
+        Fx: 600
+        Fy: 600
+        Cx: 300
+        Cy: 300
+        Focal Length: 10
+        Aperture: 4
     MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      BaseColor: [1, 1, 0, 1]
       Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 9275920839416069452
-    TagComponent:
-      Tag: Icosphere
-    TransformComponent:
-      Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
-      Scale: [0.5, 0.5, 0.5]
-    MeshComponent:
-      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/icosphere.obj
-      RelativeModelPath: icosphere.obj
-      MeshDataType: OBJ_FILE
-      PolygonMode: Fill
-    MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
-      Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 12948152059822446049
-    TagComponent:
-      Tag: Lightsource
-    TransformComponent:
-      Position: [0, 0, 2.29999995]
-      Rotation: [-4.37113883e-08, -0, 1, -0]
-      Scale: [0.100000001, 0.100000001, 1]
-    MeshComponent:
-      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
-      RelativeModelPath: plane.obj
-      MeshDataType: OBJ_FILE
-      PolygonMode: Fill
-    MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
-      Emission: 1
       Diffuse: 0.5
       Specular: 0.5
       PhongExponent: 32
@@ -73,9 +43,9 @@ Entities:
       Scale: [1, 1, 1]
     GaussianComponent2DGS:
       Positions:
-        - [0, 0, 2.29999995]
+        - [-1.30142725, -1.94538522, 3.22058177]
         - [0, 0, -1]
-        - [0, 0, -0.5]
+        - [-0.372588128, 3.48755813, 3.76165271]
         - [0.203614473, -0.147932768, -0.407233328]
         - [-0.0777721256, -0.239362344, -0.407233268]
         - [0.346604347, -0.252162486, -0.213099584]
@@ -199,7 +169,6 @@ Entities:
         - [0.168129414, -0.273176402, -0.335948586]
         - [0.107001781, 0.329323292, 0.316710919]
         - [-0.103719577, -0.0754623711, 0.450870514]
-        - [0.107001781, -0.329323292, 0.316710919]
       Normals:
         - [0, 0, -1]
         - [0, 0, 1]
@@ -327,11 +296,10 @@ Entities:
         - [0.355012119, -0.573438168, -0.738332629]
         - [0.231422022, 0.712245524, 0.662684083]
         - [-0.213838577, -0.146633491, 0.965801239]
-        - [0.231422052, -0.712245524, 0.662684083]
       Scales:
         - [0.100000001, 0.100000001]
         - [5, 5]
-        - [4.99999564e-13, 4.99999564e-13]
+        - [0.100000001, 0.100000001]
         - [0.0608149655, 0.0608149655]
         - [0.0608150251, 0.0608150251]
         - [0.0662189797, 0.0662189797]
@@ -455,12 +423,10 @@ Entities:
         - [0.0679457486, 0.0679457486]
         - [0.0642086789, 0.0642086789]
         - [0.0642190278, 0.0642190278]
-        - [0.0642086789, 0.0642086789]
       Emissions:
-        - 1
+        - 0.100000001
         - 0
-        - 0
-        - 0
+        - 0.100000001
         - 0
         - 0
         - 0
@@ -712,135 +678,10 @@ Entities:
         - 2
         - 2
         - 2
-      Colors:
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
-        - 1
         - 1
       Diffuse:
+        - 1
+        - 1
         - 0.5
         - 0.5
         - 0.5
@@ -965,13 +806,136 @@ Entities:
         - 0.5
         - 0.5
         - 0.5
-        - 0.5
-        - 0.5
-        - 0.5
+      Colors:
+        - [1, 1, 1, 1]
+        - [1, 1, 1, 1]
+        - [1, 1, 1, 1]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
+        - [1, 0, 0, 0]
       Specular:
-        - 0.5
-        - 0.5
-        - 0.5
+        - 0
+        - 0
         - 0.5
         - 0.5
         - 0.5
@@ -1223,28 +1187,99 @@ Entities:
         - 32
         - 32
         - 32
-        - 32
-  - Entity: 13303103811669544027
+  - Entity: 12948152059822446049
     TagComponent:
-      Tag: Camera
+      Tag: Lightsource
     TransformComponent:
-      Position: [6.69999981, 0, 2.5]
-      Rotation: [0.559254766, -0.430684149, 0.432190061, -0.561210334]
+      Position: [0, 0, 2.29999995]
+      Rotation: [-4.37113883e-08, -0, 1, -0]
+      Scale: [0.100000001, 0.100000001, 1]
+    MeshComponent:
+      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
+      RelativeModelPath: plane.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 1
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 9275920839416069452
+    TagComponent:
+      Tag: Icosphere
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [0.5, 0.5, 0.5]
+    MeshComponent:
+      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/icosphere.obj
+      RelativeModelPath: icosphere.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 17388039636272584444
+    TagComponent:
+      Tag: Plane
+    TransformComponent:
+      Position: [0, 0, -1]
+      Rotation: [1, 0, 0, 0]
+      Scale: [5, 5, 1]
+    MeshComponent:
+      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/plane.obj
+      RelativeModelPath: plane.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 10693829617048249325
+    TagComponent:
+      Tag: Camera2
+    TransformComponent:
+      Position: [0, -4.30000019, 2.5]
+      Rotation: [0.866025388, 0.5, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
       MeshDataType: CAMERA_GIZMO_PINHOLE
       PolygonMode: Line
     CameraComponent:
       CameraType: PINHOLE
-      RenderFromViewpoint: true
+      RenderFromViewpoint: false
       FlipX: true
       FlipY: true
       PinHoleParameters:
         Height: 600
-        Width: 960
+        Width: 600
         Fx: 600
         Fy: 600
-        Cx: 480
+        Cx: 300
         Cy: 300
         Focal Length: 10
         Aperture: 4
+    MaterialComponent:
+      BaseColor: [1, 1, 1, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
