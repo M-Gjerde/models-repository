@@ -36,8 +36,8 @@ Entities:
       Scale: [1, 1, 1]
     MeshComponent:
       Origin: [0, 0, 0]
-      Direction: [0, 0, 1]
-      Magnitude: 4
+      Direction: [0, -0.857492983, 0.51449579]
+      Magnitude: 6.83109236
       Radius: 0.00100000005
       MeshDataType: CYLINDER
       PolygonMode: Line
@@ -60,9 +60,9 @@ Entities:
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
-      Origin: [0.200000003, 0.200000003, 6]
-      Direction: [0.0500000007, -0.0500000007, -1]
-      Magnitude: 6.11417913
+      Origin: [0, 0, 6]
+      Direction: [-0.100000001, 0.100000001, -1]
+      Magnitude: 6.52407789
       Radius: 0.0149999997
       MeshDataType: CYLINDER
       PolygonMode: Line
@@ -86,22 +86,22 @@ Entities:
     MeshComponent:
       a: 1
       b: 1.5
-      c: 0.5
-      t_x: -1
-      t_y: -1
+      c: 1
+      t_x: -0.855000019
+      t_y: -1.579
       gridResolution: 100
-      min: [-10, -10]
-      max: [10, 10]
-      BBeta: 1.54200006
-      Threshold: 0.00100000005
-      KernelScale: 2
+      min: [-1, -1]
+      max: [1, 1]
+      BBeta: 0
+      Threshold: 0
+      KernelScale: 1
       MeshDataType: QUADRIC
       PolygonMode: Line
     MaterialComponent:
       BaseColor: [0.800000012, 0.800000012, 0.800000012, 0.800000012]
       Emission: 0
-      Diffuse: 1
-      Specular: 0
+      Diffuse: 0.5
+      Specular: 0.5
       PhongExponent: 32
       UseVertexColor: true
       VertexShader: defaultBasic.vert
@@ -159,8 +159,8 @@ Entities:
     TagComponent:
       Tag: Camera1
     TransformComponent:
-      Position: [0, 0, 3]
-      Rotation: [1, 0, 0, 0]
+      Position: [0, -5, 3]
+      Rotation: [0.866025388, 0.5, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
       MeshDataType: CAMERA_GIZMO_PINHOLE
@@ -198,9 +198,9 @@ Entities:
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
-      Origin: [0.504947543, -0.104947552, -0.0989508629]
-      Direction: [-0.160730779, 0.033406049, 0.986432731]
-      Magnitude: 4.15532732
+      Origin: [-0.64598, 0.64598, -0.459799767]
+      Direction: [0.0970936492, -0.848615766, 0.520023227]
+      Magnitude: 7.65825558
       Radius: 0.00100000005
       MeshDataType: CYLINDER
       PolygonMode: Line
@@ -236,8 +236,8 @@ Entities:
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
-      Origin: [0.504947543, -0.104947552, -0.0989508629]
-      Direction: [0.358741045, -0.0331378728, 0.932848632]
+      Origin: [-0.64598, 0.64598, -0.459799767]
+      Direction: [-0.621207714, 0.365555406, 0.69315958]
       Magnitude: 1
       Radius: 0.0149999997
       MeshDataType: CYLINDER
@@ -261,10 +261,10 @@ Entities:
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
-      Origin: [-0.162941456, 0.0338655114, 4]
-      Direction: [0, 0, -1]
-      Magnitude: 0
-      Radius: 0.00100000005
+      Origin: [0.0975880027, -5.85293674, 3.52267098]
+      Direction: [0, 0.866025388, -0.5]
+      Magnitude: 9.06099987
+      Radius: 0.0140000004
       MeshDataType: CYLINDER
       PolygonMode: Line
     MaterialComponent:
@@ -281,8 +281,8 @@ Entities:
     TagComponent:
       Tag: Camera2
     TransformComponent:
-      Position: [-5, 0, 3]
-      Rotation: [0.612372398, 0.353553385, -0.353553385, -0.612372398]
+      Position: [-6, 0, 2]
+      Rotation: [0.579227984, 0.405579805, -0.405579805, -0.579227984]
       Scale: [1, 1, 1]
     MeshComponent:
       MeshDataType: CAMERA_GIZMO_PINHOLE
