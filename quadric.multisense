@@ -44,7 +44,7 @@ Entities:
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
-      Origin: [0.115587473, 5.80692244, 3.60236835]
+      Origin: [0.113005459, 5.82836294, 3.56523323]
       Direction: [-7.57103464e-08, -0.866025388, -0.5]
       Magnitude: 9.06099987
       Radius: 0.0140000004
@@ -69,8 +69,8 @@ Entities:
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
-      Origin: [-0.626483381, 0.626483381, -0.26483345]
-      Direction: [-0.363707572, 0.363707572, 0.857574165]
+      Origin: [-0.600218952, 0.600218952, -0.00218915939]
+      Direction: [-0.352306366, -0.352306366, 0.867041171]
       Magnitude: 1
       Radius: 0.0149999997
       MeshDataType: CYLINDER
@@ -107,9 +107,9 @@ Entities:
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
-      Origin: [-0.626483381, 0.626483381, -0.26483345]
-      Direction: [0.0958628207, -0.860949516, 0.499576151]
-      Magnitude: 7.53983593
+      Origin: [-0.600218952, 0.600218952, -0.00218915939]
+      Direction: [0.0940418765, -0.877438307, 0.470380872]
+      Magnitude: 7.38741493
       Radius: 0.00100000005
       MeshDataType: CYLINDER
       PolygonMode: Line
@@ -217,12 +217,12 @@ Entities:
       b: 1.5
       c: 1
       t_x: -1
-      t_y: -1
+      t_y: 1
       gridResolution: 100
-      min: [-1, -1]
-      max: [1, 1]
-      BBeta: 0
-      Threshold: 0
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: -0.463
+      Threshold: 0.00999999978
       KernelScale: 1
       MeshDataType: QUADRIC
       PolygonMode: Line
@@ -247,7 +247,7 @@ Entities:
     MeshComponent:
       Origin: [0, 0, 6]
       Direction: [-0.100000001, 0.100000001, -1]
-      Magnitude: 6.3271718
+      Magnitude: 6.06191397
       Radius: 0.00499999989
       MeshDataType: CYLINDER
       PolygonMode: Line
@@ -270,9 +270,9 @@ Entities:
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
-      Origin: [0.00169085071, 0.0037772255, -0.0786514282]
-      Direction: [-0.000287803297, -0.851703584, 0.524023831]
-      Magnitude: 6.87541294
+      Origin: [0.001665766, 0.00372118829, 0.011528492]
+      Direction: [-0.000285810238, -0.858532846, 0.512758553]
+      Magnitude: 6.82833242
       Radius: 0.00100000005
       MeshDataType: CYLINDER
       PolygonMode: Line
@@ -297,7 +297,7 @@ Entities:
     MeshComponent:
       Origin: [0, 0, 6]
       Direction: [0.000278162071, 0.000621391868, -0.999999762]
-      Magnitude: 6.07865286
+      Magnitude: 5.98847246
       Radius: 0.0109999999
       MeshDataType: CYLINDER
       PolygonMode: Fill
