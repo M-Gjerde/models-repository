@@ -1,38 +1,25 @@
 Scene: quadric_3.multisense
 Base Path: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository
 Entities:
-  - Entity: 9848236121165587096
-    TagComponent:
-      Tag: rays
-    TransformComponent:
-      Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
-      Scale: [1, 1, 1]
-    VisibleComponent:
-      Visible: true
-    GroupComponent:
-      {}
-    GroupComponent:
-      {}
-  - Entity: 13563944246536161624
+  - Entity: 10136777505372869504
     Parent: 9996475508950502533
     TagComponent:
-      Tag: Quadric 0
+      Tag: Quadric 16
     TransformComponent:
-      Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
-      Scale: [1, 1, 1]
+      Position: [-0.853552997, 0.353553236, 0.382683456]
+      Rotation: [0.830824673, -0.21297656, -0.514170647, 0]
+      Scale: [1, 0.99999994, 1]
     MeshComponent:
-      a: 1
-      b: 1
-      c: 1
-      t_x: -1
-      t_y: 1
+      a: 0.496374756
+      b: 0.558631778
+      c: 0.4982602
+      t_x: -0.297043771
+      t_y: -0.387984365
       gridResolution: 200
-      min: [-1, -1]
-      max: [1, 1]
-      BBeta: 0
-      Threshold: 0
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: -0.374715626
+      Threshold: 0.00999999978
       KernelScale: 1
       MeshDataType: QUADRIC
       PolygonMode: Line
@@ -46,6 +33,558 @@ Entities:
       VertexShader: defaultBasic.vert
       FragmentShader: defaultPhongLight.frag
       AlbedoTexturePath: default.png
+  - Entity: 85721467744215907
+    Parent: 9996475508950502533
+    TagComponent:
+      Tag: Quadric 15
+    TransformComponent:
+      Position: [-0.81549263, 0.162211761, 0.555570245]
+      Rotation: [0.881125212, -0.0922551006, -0.463796705, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      a: 1
+      b: 1
+      c: 0
+      t_x: 0.100000001
+      t_y: -0.100000001
+      gridResolution: 200
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: 3.38946557
+      Threshold: 0.00999999978
+      KernelScale: 1
+      MeshDataType: QUADRIC
+      PolygonMode: Line
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      UseVertexColor: true
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 10159455465852506885
+    Parent: 9996475508950502533
+    TagComponent:
+      Tag: Quadric 14
+    TransformComponent:
+      Position: [-0.906127155, -0.375329882, -0.195090324]
+      Rotation: [-0.634850442, -0.295674443, 0.713821828, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      a: 0.50049603
+      b: 0.559578121
+      c: 0.498246759
+      t_x: -0.297012985
+      t_y: -0.38789773
+      gridResolution: 200
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: -0.303202242
+      Threshold: 0.00999999978
+      KernelScale: 1
+      MeshDataType: QUADRIC
+      PolygonMode: Line
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      UseVertexColor: true
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 16272586859124305296
+    Parent: 9996475508950502533
+    TagComponent:
+      Tag: Quadric 13
+    TransformComponent:
+      Position: [-0.461939633, -0.691341341, 0.555570245]
+      Rotation: [0.881125212, 0.393187821, -0.26271984, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      a: 0.495037436
+      b: 0.55737859
+      c: 0.498316944
+      t_x: -0.297043234
+      t_y: -0.388083309
+      gridResolution: 200
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: -0.48154068
+      Threshold: 0.00999999978
+      KernelScale: 1
+      MeshDataType: QUADRIC
+      PolygonMode: Line
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      UseVertexColor: true
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 18019008025079811572
+    Parent: 9996475508950502533
+    TagComponent:
+      Tag: Quadric 12
+    TransformComponent:
+      Position: [-0.162211716, -0.815492809, -0.555570245]
+      Rotation: [0.472883016, 0.864194632, -0.171899185, -4.31070735e-09]
+      Scale: [1, 0.999999821, 0.999999821]
+    MeshComponent:
+      a: 0.495683163
+      b: 0.557675958
+      c: 0.498363584
+      t_x: -0.297001988
+      t_y: -0.388012648
+      gridResolution: 200
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: -0.478661418
+      Threshold: 0.00999999978
+      KernelScale: 1
+      MeshDataType: QUADRIC
+      PolygonMode: Line
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      UseVertexColor: true
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 10580528155504813958
+    Parent: 9996475508950502533
+    TagComponent:
+      Tag: Quadric 11
+    TransformComponent:
+      Position: [0.375330031, -0.906127214, 0.195090324]
+      Rotation: [0.772635281, 0.586525142, 0.242946446, 9.64307567e-09]
+      Scale: [0.999999821, 1, 1]
+    MeshComponent:
+      a: 0.499352902
+      b: 0.559871137
+      c: 0.498177648
+      t_x: -0.297061741
+      t_y: -0.387907863
+      gridResolution: 200
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: -0.302910924
+      Threshold: 0.00999999978
+      KernelScale: 1
+      MeshDataType: QUADRIC
+      PolygonMode: Line
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      UseVertexColor: true
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 674436400726430066
+    Parent: 9996475508950502533
+    TagComponent:
+      Tag: Quadric 10
+    TransformComponent:
+      Position: [0.815492928, -0.162211731, 0.555570245]
+      Rotation: [0.881125271, 0.0922549516, 0.463796556, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      a: 0.495687246
+      b: 0.55767566
+      c: 0.498301655
+      t_x: -0.297046334
+      t_y: -0.38806501
+      gridResolution: 200
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: -0.478662938
+      Threshold: 0.00999999978
+      KernelScale: 1
+      MeshDataType: QUADRIC
+      PolygonMode: Line
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      UseVertexColor: true
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 13781688842688607654
+    Parent: 9996475508950502533
+    TagComponent:
+      Tag: Quadric 9
+    TransformComponent:
+      Position: [0.815492928, -0.162211731, -0.555570245]
+      Rotation: [0.472882897, 0.17189917, 0.864194691, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      a: 0.49568668
+      b: 0.55767417
+      c: 0.498337537
+      t_x: -0.297022909
+      t_y: -0.38803187
+      gridResolution: 200
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: -0.478662968
+      Threshold: 0.00999999978
+      KernelScale: 1
+      MeshDataType: QUADRIC
+      PolygonMode: Line
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      UseVertexColor: true
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 2155921817558015468
+    Parent: 9996475508950502533
+    TagComponent:
+      Tag: Quadric 8
+    TransformComponent:
+      Position: [0.831469536, 0.555570006, 0]
+      Rotation: [0.707106769, -0.39284724, 0.587937951, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      a: 0.498763144
+      b: 0.562986076
+      c: 0.498030871
+      t_x: -0.297032267
+      t_y: -0.387626678
+      gridResolution: 200
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: -0.0859386176
+      Threshold: 0.00999999978
+      KernelScale: 1
+      MeshDataType: QUADRIC
+      PolygonMode: Line
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      UseVertexColor: true
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 848101948902353619
+    Parent: 9996475508950502533
+    TagComponent:
+      Tag: Quadric 7
+    TransformComponent:
+      Position: [0, 0.831469595, -0.555570245]
+      Rotation: [-0.472883165, 0.881125152, 1.12315445e-06, 3.22561564e-14]
+      Scale: [1, 1.00000036, 1.00000036]
+    MeshComponent:
+      a: 0.495686144
+      b: 0.557673812
+      c: 0.49833858
+      t_x: -0.297021985
+      t_y: -0.388031214
+      gridResolution: 200
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: -0.478663385
+      Threshold: 0.00999999978
+      KernelScale: 1
+      MeshDataType: QUADRIC
+      PolygonMode: Line
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      UseVertexColor: true
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 12715698895033335333
+    Parent: 9996475508950502533
+    TagComponent:
+      Tag: Quadric 6
+    TransformComponent:
+      Position: [0, 0, -1]
+      Rotation: [0, 1, 0, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      a: 0.502442241
+      b: 0.568054676
+      c: 0.497637123
+      t_x: -0.297083437
+      t_y: -0.387237608
+      gridResolution: 200
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: 0.216743499
+      Threshold: 0.00999999978
+      KernelScale: 1
+      MeshDataType: QUADRIC
+      PolygonMode: Line
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      UseVertexColor: true
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 13877097950140150871
+    Parent: 9996475508950502533
+    TagComponent:
+      Tag: Quadric 5
+    TransformComponent:
+      Position: [0, 0, 1]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      a: 0.502427042
+      b: 0.568071842
+      c: 0.497677922
+      t_x: -0.297038645
+      t_y: -0.3872284
+      gridResolution: 200
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: 0.216743901
+      Threshold: 0.00999999978
+      KernelScale: 1
+      MeshDataType: QUADRIC
+      PolygonMode: Line
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      UseVertexColor: true
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 8715677332348565074
+    Parent: 9996475508950502533
+    TagComponent:
+      Tag: Quadric 4
+    TransformComponent:
+      Position: [1.49011612e-08, 0.1950901, 0.980785251]
+      Rotation: [0.994886518, -0.10099943, -4.81842676e-07, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      a: 0.99822104
+      b: 1.00035179
+      c: -0.0266856123
+      t_x: 0.10814663
+      t_y: -0.0982198194
+      gridResolution: 200
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: 3.51930094
+      Threshold: 0.00999999978
+      KernelScale: 1
+      MeshDataType: QUADRIC
+      PolygonMode: Line
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      UseVertexColor: true
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 9252051565652960974
+    Parent: 9996475508950502533
+    TagComponent:
+      Tag: Quadric 3
+    TransformComponent:
+      Position: [1.49011612e-08, 0.1950901, -0.980785251]
+      Rotation: [-0.10099943, 0.994886518, 1.32023592e-06, -7.14194718e-15]
+      Scale: [1, 0.999999821, 0.999999821]
+    MeshComponent:
+      a: 0.99822104
+      b: 1.00035179
+      c: -0.0266856086
+      t_x: 0.108146615
+      t_y: -0.0982198268
+      gridResolution: 200
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: 3.5193007
+      Threshold: 0.00999999978
+      KernelScale: 1
+      MeshDataType: QUADRIC
+      PolygonMode: Line
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      UseVertexColor: true
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 11225775813854244307
+    Parent: 9996475508950502533
+    TagComponent:
+      Tag: Quadric 2
+    TransformComponent:
+      Position: [5.96046448e-08, 0.923879027, 0.382683456]
+      Rotation: [0.830824673, -0.556534231, -7.22665789e-07, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      a: 0.495550781
+      b: 0.558504999
+      c: 0.498301178
+      t_x: -0.297012866
+      t_y: -0.387961328
+      gridResolution: 200
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: -0.375707805
+      Threshold: 0.00999999978
+      KernelScale: 1
+      MeshDataType: QUADRIC
+      PolygonMode: Line
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      UseVertexColor: true
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 15042784775671220040
+    Parent: 9996475508950502533
+    TagComponent:
+      Tag: Quadric 1
+    TransformComponent:
+      Position: [0.13794969, 0.69351989, -0.707106769]
+      Rotation: [-0.384667903, 0.905318856, -0.18007867, 0]
+      Scale: [1, 0.999999881, 0.999999881]
+    MeshComponent:
+      a: 1
+      b: 1
+      c: 0
+      t_x: 0.100000001
+      t_y: -0.100000001
+      gridResolution: 200
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: 3.05585527
+      Threshold: 0.00999999978
+      KernelScale: 1
+      MeshDataType: QUADRIC
+      PolygonMode: Line
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      UseVertexColor: true
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 16706361890890706765
+    Parent: 9996475508950502533
+    TagComponent:
+      Tag: Quadric 0
+    TransformComponent:
+      Position: [2.16066837e-07, 0.55556953, -0.831469595]
+      Rotation: [-0.292706043, 0.956202507, 1.76317815e-06, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      a: 1
+      b: 1
+      c: 0
+      t_x: 0.100000001
+      t_y: -0.100000001
+      gridResolution: 200
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: 3.19636393
+      Threshold: 0.00999999978
+      KernelScale: 1
+      MeshDataType: QUADRIC
+      PolygonMode: Line
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      UseVertexColor: true
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 17583312095664692692
+    Parent: 9848236121165587096
+    TagComponent:
+      Tag: Emitter
+    TransformComponent:
+      Position: [0, 0, 0.0119609786]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    ScriptableComponent:
+      ScriptName: VkRender::Emitter
+    MeshComponent:
+      Origin: [-99, 0, 0]
+      Direction: [0.0900000036, -0.0900000036, -1]
+      Magnitude: 1.00806749
+      Radius: 0.00999999978
+      MeshDataType: CYLINDER
+      PolygonMode: Line
+    MaterialComponent:
+      BaseColor: [1, 0, 0, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      UseVertexColor: false
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 9848236121165587096
+    TagComponent:
+      Tag: rays
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    VisibleComponent:
+      Visible: false
+    GroupComponent:
+      {}
+    GroupComponent:
+      {}
   - Entity: 9996475508950502533
     TagComponent:
       Tag: QuadricCollection
@@ -53,6 +592,8 @@ Entities:
       Position: [0, 0, 0]
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
+    VisibleComponent:
+      Visible: true
     GroupComponent:
       {}
     MeshComponent:
@@ -60,32 +601,192 @@ Entities:
       PolygonMode: Line
     QuadricCollectionComponent:
       Positions:
-        - [0, 0, 0]
+        - [2.16066837e-07, 0.55556953, -0.831469595]
+        - [0.13794969, 0.69351989, -0.707106769]
+        - [5.96046448e-08, 0.923879027, 0.382683456]
+        - [1.49011612e-08, 0.1950901, -0.980785251]
+        - [1.49011612e-08, 0.1950901, 0.980785251]
+        - [0, 0, 1]
+        - [0, 0, -1]
+        - [0, 0.831469595, -0.555570245]
+        - [0.831469536, 0.555570006, 0]
+        - [0.815492928, -0.162211731, -0.555570245]
+        - [0.815492928, -0.162211731, 0.555570245]
+        - [0.375330031, -0.906127214, 0.195090324]
+        - [-0.162211716, -0.815492809, -0.555570245]
+        - [-0.461939633, -0.691341341, 0.555570245]
+        - [-0.906127155, -0.375329882, -0.195090324]
+        - [-0.81549263, 0.162211761, 0.555570245]
+        - [-0.853552997, 0.353553236, 0.382683456]
       Rotations:
+        - [0.292706043, -0.956202507, -1.76317826e-06, 0]
+        - [0.384667903, -0.905318856, 0.180078685, 0]
+        - [0.830824673, -0.556534231, -7.22665789e-07, 0]
+        - [0.100999445, -0.994886458, -1.32023592e-06, 0]
+        - [0.994886458, -0.100999445, -4.81842733e-07, 0]
         - [1, 0, 0, 0]
+        - [0, 1, 0, 0]
+        - [0.472883195, -0.881125152, -1.12315456e-06, 0]
+        - [0.707106769, -0.39284724, 0.587937951, 0]
+        - [0.472882897, 0.171899155, 0.864194691, -0]
+        - [0.881125271, 0.092254959, 0.463796586, -0]
+        - [0.772635281, 0.586525142, 0.242946461, -0]
+        - [0.472883046, 0.864194572, -0.171899185, 0]
+        - [0.881125212, 0.393187821, -0.26271984, 0]
+        - [0.634850442, 0.295674443, -0.713821828, 0]
+        - [0.881125212, -0.0922551006, -0.463796705, 0]
+        - [0.830824673, -0.21297656, -0.514170587, 0]
       A:
         - 1
+        - 1
+        - 0.495550781
+        - 0.99822104
+        - 0.99822104
+        - 0.502427042
+        - 0.502442241
+        - 0.495686144
+        - 0.498763144
+        - 0.49568668
+        - 0.495687246
+        - 0.499352902
+        - 0.495683163
+        - 0.495037436
+        - 0.50049603
+        - 1
+        - 0.496374756
       B:
         - 1
+        - 1
+        - 0.558504999
+        - 1.00035179
+        - 1.00035179
+        - 0.568071842
+        - 0.568054676
+        - 0.557673812
+        - 0.562986076
+        - 0.55767417
+        - 0.55767566
+        - 0.559871137
+        - 0.557675958
+        - 0.55737859
+        - 0.559578121
+        - 1
+        - 0.558631778
       C:
-        - 1
+        - 0
+        - 0
+        - 0.498301178
+        - -0.0266856086
+        - -0.0266856123
+        - 0.497677922
+        - 0.497637123
+        - 0.49833858
+        - 0.498030871
+        - 0.498337537
+        - 0.498301655
+        - 0.498177648
+        - 0.498363584
+        - 0.498316944
+        - 0.498246759
+        - 0
+        - 0.4982602
       T_x:
-        - -1
+        - 0.100000001
+        - 0.100000001
+        - -0.297012866
+        - 0.108146615
+        - 0.10814663
+        - -0.297038645
+        - -0.297083437
+        - -0.297021985
+        - -0.297032267
+        - -0.297022909
+        - -0.297046334
+        - -0.297061741
+        - -0.297001988
+        - -0.297043234
+        - -0.297012985
+        - 0.100000001
+        - -0.297043771
       T_y:
-        - 1
+        - -0.100000001
+        - -0.100000001
+        - -0.387961328
+        - -0.0982198268
+        - -0.0982198194
+        - -0.3872284
+        - -0.387237608
+        - -0.388031214
+        - -0.387626678
+        - -0.38803187
+        - -0.38806501
+        - -0.387907863
+        - -0.388012648
+        - -0.388083309
+        - -0.38789773
+        - -0.100000001
+        - -0.387984365
       KernelScale:
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
         - 1
       Threshold:
         - 0.00999999978
+        - 0.00999999978
+        - 0.00999999978
+        - 0.00999999978
+        - 0.00999999978
+        - 0.00999999978
+        - 0.00999999978
+        - 0.00999999978
+        - 0.00999999978
+        - 0.00999999978
+        - 0.00999999978
+        - 0.00999999978
+        - 0.00999999978
+        - 0.00999999978
+        - 0.00999999978
+        - 0.00999999978
+        - 0.00999999978
       Beta:
-        - 0
+        - 3.19636393
+        - 3.05585527
+        - -0.375707805
+        - 3.5193007
+        - 3.51930094
+        - 0.216743901
+        - 0.216743499
+        - -0.478663385
+        - -0.0859386176
+        - -0.478662968
+        - -0.478662938
+        - -0.302910924
+        - -0.478661418
+        - -0.48154068
+        - -0.303202242
+        - 3.38946557
+        - -0.374715626
     GroupComponent:
       {}
   - Entity: 17757748467710589453
     TagComponent:
       Tag: Floor
     TransformComponent:
-      Position: [0, 0, -24]
+      Position: [0, 0, -3.5]
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
@@ -159,9 +860,9 @@ Entities:
     ScriptableComponent:
       ScriptName: VkRender::ContributionRay
     MeshComponent:
-      Origin: [0.540000021, -0.540000021, 0]
-      Direction: [0.879218161, 0.108893998, 0.463807732]
-      Magnitude: 4.95895147
+      Origin: [-99, 0, 0]
+      Direction: [0.999755025, 0, 0.0221312474]
+      Magnitude: 103.925453
       Radius: 0.00100000005
       MeshDataType: CYLINDER
       PolygonMode: Line
@@ -184,11 +885,11 @@ Entities:
       Scale: [1, 1, 1]
     GaussianComponent2DGS:
       Positions:
-        - [0, 0, 6]
+        - [0, 0, 12]
       Normals:
         - [0, 0, -1]
       Scales:
-        - [0.100000001, 0.100000001]
+        - [1, 1]
       Emissions:
         - 0.100000001
       Opacities:
@@ -201,30 +902,3 @@ Entities:
         - 0.5
       PhongExponents:
         - 32
-  - Entity: 17583312095664692692
-    Parent: 9848236121165587096
-    TagComponent:
-      Tag: Emitter
-    TransformComponent:
-      Position: [0, 0, 0.0119609786]
-      Rotation: [1, 0, 0, 0]
-      Scale: [1, 1, 1]
-    ScriptableComponent:
-      ScriptName: VkRender::Emitter
-    MeshComponent:
-      Origin: [0, 0, 6]
-      Direction: [0.0900000036, -0.0900000036, -1]
-      Magnitude: 6.04840469
-      Radius: 0.00999999978
-      MeshDataType: CYLINDER
-      PolygonMode: Line
-    MaterialComponent:
-      BaseColor: [1, 0, 0, 1]
-      Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      UseVertexColor: false
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
