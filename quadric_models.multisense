@@ -1,4 +1,4 @@
-Scene: quadric_3.multisense
+Scene: quadric_models.multisense
 Base Path: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository
 Entities:
   - Entity: 4683295979514383917
