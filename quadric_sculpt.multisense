@@ -6,7 +6,7 @@ Entities:
     TagComponent:
       Tag: Quadric 4
     TransformComponent:
-      Position: [-0.899999976, 0, 1.5]
+      Position: [-0.899999976, 0, -0.5]
       Rotation: [0.710353255, 1.06769036e-07, -0.703845322, 1.06769036e-07]
       Scale: [1.00004232, 1, 1.00004232]
     MeshComponent:
@@ -38,9 +38,9 @@ Entities:
     TagComponent:
       Tag: Quadric 2
     TransformComponent:
-      Position: [0, -1.39999998, 1.39999998]
+      Position: [0, -1.39999998, -0.600000024]
       Rotation: [0.707106829, -0.707106709, 0, 0]
-      Scale: [1, 0.991640925, 0.991640925]
+      Scale: [1, 0.990852058, 0.990852058]
     MeshComponent:
       a: 1
       b: 1
@@ -70,9 +70,9 @@ Entities:
     TagComponent:
       Tag: Quadric 1
     TransformComponent:
-      Position: [0, 1.39999998, 1.39999998]
+      Position: [0, 1.39999998, -0.600000024]
       Rotation: [0.707106829, 0.707106709, 0, 0]
-      Scale: [1, 0.995999157, 0.995999157]
+      Scale: [1, 0.99521029, 0.99521029]
     MeshComponent:
       a: 1
       b: 1
@@ -102,7 +102,7 @@ Entities:
     TagComponent:
       Tag: Quadric 0
     TransformComponent:
-      Position: [0, 0, 2.79999995]
+      Position: [0, 0, 0.799999952]
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1.00000036, 1.00000036]
     MeshComponent:
@@ -129,39 +129,35 @@ Entities:
       VertexShader: defaultBasic.vert
       FragmentShader: defaultPhongLight.frag
       AlbedoTexturePath: default.png
-  - Entity: 1705289083053590356
+  - Entity: 8908551284942728885
+    Parent: 9996475508950502533
     TagComponent:
-      Tag: Camera1
+      Tag: Quadric 3
     TransformComponent:
-      Position: [4.9000001, 0, 2.29999995]
-      Rotation: [0.595703781, 0.380968422, 0.380968422, 0.595703781]
-      Scale: [1, 1, 1]
-    ScriptableComponent:
-      ScriptName: VkRender::DefaultController
+      Position: [0, 0, -1.39999998]
+      Rotation: [1, 0, 0, 0]
+      Scale: [0.999999523, 0.997169137, 0.997169614]
     MeshComponent:
-      MeshDataType: CAMERA_GIZMO_PINHOLE
-      PolygonMode: Line
-    CameraComponent:
-      CameraType: PINHOLE
-      RenderFromViewpoint: true
-      FlipX: true
-      FlipY: true
-      PinHoleParameters:
-        Height: 600
-        Width: 600
-        Fx: 600
-        Fy: 600
-        Cx: 300
-        Cy: 300
-        Focal Length: 10
-        Aperture: 4
+      a: 1
+      b: 1
+      c: 0
+      t_x: -1
+      t_y: 1
+      gridResolution: 200
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: 0
+      Threshold: 0.00999999978
+      KernelScale: 2.00999999
+      MeshDataType: QUADRIC
+      PolygonMode: Fill
     MaterialComponent:
-      BaseColor: [1, 1, 0, 1]
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
       Emission: 0
       Diffuse: 0.5
       Specular: 0.5
       PhongExponent: 32
-      UseVertexColor: false
+      UseVertexColor: true
       VertexShader: defaultBasic.vert
       FragmentShader: defaultPhongLight.frag
       AlbedoTexturePath: default.png
@@ -201,13 +197,13 @@ Entities:
       Scale: [1, 1, 1]
     GaussianComponent2DGS:
       Positions:
-        - [0, 0, 12]
+        - [-1.10000002, 0, 7]
       Normals:
-        - [0, 0, -1]
+        - [0.300000012, 0, -1]
       Scales:
         - [1, 1]
       Emissions:
-        - 0.100000001
+        - 0.00999999978
       Opacities:
         - 1
       Diffuse:
@@ -231,7 +227,7 @@ Entities:
     MeshComponent:
       Origin: [-99, 0, 0]
       Direction: [0.0900000036, -0.0900000036, -1]
-      Magnitude: 1.00806749
+      Magnitude: 1.41129446
       Radius: 0.00999999978
       MeshDataType: CYLINDER
       PolygonMode: Line
@@ -262,7 +258,7 @@ Entities:
     TagComponent:
       Tag: QuadricCollection
     TransformComponent:
-      Position: [0, 0, 0]
+      Position: [0, 0, -2]
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     VisibleComponent:
@@ -335,35 +331,3 @@ Entities:
         - 0
     GroupComponent:
       {}
-  - Entity: 8908551284942728885
-    Parent: 9996475508950502533
-    TagComponent:
-      Tag: Quadric 3
-    TransformComponent:
-      Position: [0, 0, 0.600000024]
-      Rotation: [1, 0, 0, 0]
-      Scale: [0.999999523, 0.997169137, 0.997169614]
-    MeshComponent:
-      a: 1
-      b: 1
-      c: 0
-      t_x: -1
-      t_y: 1
-      gridResolution: 200
-      min: [-2, -2]
-      max: [2, 2]
-      BBeta: 0
-      Threshold: 0.00999999978
-      KernelScale: 2.00999999
-      MeshDataType: QUADRIC
-      PolygonMode: Fill
-    MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
-      Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      UseVertexColor: true
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png

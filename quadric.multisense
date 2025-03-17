@@ -1,134 +1,43 @@
 Scene: quadric.multisense
 Base Path: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository
 Entities:
+  - Entity: 3570719722825482176
+    TagComponent:
+      Tag: Quadric2
+    TransformComponent:
+      Position: [1, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      a: 1
+      b: 1
+      c: 1
+      t_x: -1
+      t_y: 1
+      gridResolution: 200
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: 0
+      Threshold: 0.100000001
+      KernelScale: 1
+      MeshDataType: QUADRIC
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 1
+      Specular: 0
+      PhongExponent: 32
+      UseVertexColor: true
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
   - Entity: 16764044053083281882
     TagComponent:
       Tag: Camera2
     TransformComponent:
       Position: [0, 5, 3]
       Rotation: [-3.78551732e-08, -2.18556941e-08, -0.5, -0.866025388]
-      Scale: [1, 1, 1]
-    MeshComponent:
-      MeshDataType: CAMERA_GIZMO_PINHOLE
-      PolygonMode: Line
-    CameraComponent:
-      CameraType: PINHOLE
-      RenderFromViewpoint: false
-      FlipX: true
-      FlipY: true
-      PinHoleParameters:
-        Height: 600
-        Width: 600
-        Fx: 600
-        Fy: 600
-        Cx: 300
-        Cy: 300
-        Focal Length: 1000
-        Aperture: 4
-    MaterialComponent:
-      BaseColor: [1, 1, 1, 1]
-      Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      UseVertexColor: false
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 8068568437740289112
-    Parent: 9632177487883183483
-    TagComponent:
-      Tag: p
-    TransformComponent:
-      Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
-      Scale: [1, 1, 1]
-    MeshComponent:
-      Origin: [0.113005459, 5.82836294, 3.56523323]
-      Direction: [-7.57103464e-08, -0.866025388, -0.5]
-      Magnitude: 9.06099987
-      Radius: 0.0140000004
-      MeshDataType: CYLINDER
-      PolygonMode: Line
-    MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
-      Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      UseVertexColor: false
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 9864139067481364698
-    Parent: 9632177487883183483
-    TagComponent:
-      Tag: g_hit
-    TransformComponent:
-      Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
-      Scale: [1, 1, 1]
-    MeshComponent:
-      Origin: [-0.600218952, 0.600218952, -0.00218915939]
-      Direction: [-0.352306366, -0.352306366, 0.867041171]
-      Magnitude: 1
-      Radius: 0.0149999997
-      MeshDataType: CYLINDER
-      PolygonMode: Fill
-    MaterialComponent:
-      BaseColor: [0, 0.0882353783, 1, 1]
-      Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      UseVertexColor: false
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 9632177487883183483
-    TagComponent:
-      Tag: Rays
-    TransformComponent:
-      Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
-      Scale: [1, 1, 1]
-    VisibleComponent:
-      Visible: true
-    GroupComponent:
-      {}
-    GroupComponent:
-      {}
-  - Entity: 12107422823890556842
-    Parent: 9632177487883183483
-    TagComponent:
-      Tag: a_d
-    TransformComponent:
-      Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
-      Scale: [1, 1, 1]
-    MeshComponent:
-      Origin: [-0.600218952, 0.600218952, -0.00218915939]
-      Direction: [0.0940418765, -0.877438307, 0.470380872]
-      Magnitude: 7.38741493
-      Radius: 0.00100000005
-      MeshDataType: CYLINDER
-      PolygonMode: Line
-    MaterialComponent:
-      BaseColor: [1, 0, 0, 1]
-      Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      UseVertexColor: false
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 7959046934483720949
-    TagComponent:
-      Tag: Camera1
-    TransformComponent:
-      Position: [0, -5, 3]
-      Rotation: [0.866025388, 0.5, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
       MeshDataType: CAMERA_GIZMO_PINHOLE
@@ -157,6 +66,40 @@ Entities:
       VertexShader: defaultBasic.vert
       FragmentShader: defaultPhongLight.frag
       AlbedoTexturePath: default.png
+  - Entity: 7959046934483720949
+    TagComponent:
+      Tag: Camera1
+    TransformComponent:
+      Position: [0, -5, 3]
+      Rotation: [0.866025388, 0.5, 0, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      MeshDataType: CAMERA_GIZMO_PINHOLE
+      PolygonMode: Line
+    CameraComponent:
+      CameraType: PINHOLE
+      RenderFromViewpoint: false
+      FlipX: true
+      FlipY: true
+      PinHoleParameters:
+        Height: 600
+        Width: 600
+        Fx: 600
+        Fy: 600
+        Cx: 300
+        Cy: 300
+        Focal Length: 1000
+        Aperture: 4
+    MaterialComponent:
+      BaseColor: [1, 1, 1, 1]
+      Emission: 0
+      Diffuse: 0.5
+      Specular: 0.5
+      PhongExponent: 32
+      UseVertexColor: false
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
   - Entity: 7459181456259263600
     TagComponent:
       Tag: 2DGS
@@ -170,9 +113,9 @@ Entities:
       Normals:
         - [0, 0, -1]
       Scales:
-        - [0.25, 0.25]
+        - [0.00999999978, 0.00999999978]
       Emissions:
-        - 0.25
+        - 0.00100000005
       Opacities:
         - 1
       Diffuse:
@@ -183,6 +126,37 @@ Entities:
         - 0.5
       PhongExponents:
         - 32
+  - Entity: 16558869099965695410
+    TagComponent:
+      Tag: Quadric
+    TransformComponent:
+      Position: [-1, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      a: 1.5
+      b: 1.5
+      c: -1
+      t_x: -1
+      t_y: -1
+      gridResolution: 100
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: 0
+      Threshold: 0.00999999978
+      KernelScale: 1
+      MeshDataType: QUADRIC
+      PolygonMode: Line
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 0.800000012]
+      Emission: 0
+      Diffuse: 1
+      Specular: 0
+      PhongExponent: 32
+      UseVertexColor: true
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
   - Entity: 8653520690106498198
     TagComponent:
       Tag: Coordinates
@@ -197,112 +171,6 @@ Entities:
       PolygonMode: Fill
     MaterialComponent:
       BaseColor: [0.789215684, 0.789215684, 0.789215684, 1]
-      Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      UseVertexColor: false
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 16558869099965695410
-    TagComponent:
-      Tag: Quadric
-    TransformComponent:
-      Position: [0.00166897278, 0.00372835202, 0]
-      Rotation: [1, 0, 0, 0]
-      Scale: [1, 1, 1]
-    MeshComponent:
-      a: 1.5
-      b: 1.5
-      c: 1
-      t_x: -1
-      t_y: 1
-      gridResolution: 100
-      min: [-2, -2]
-      max: [2, 2]
-      BBeta: -0.463
-      Threshold: 0.00999999978
-      KernelScale: 1
-      MeshDataType: QUADRIC
-      PolygonMode: Line
-    MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 0.800000012]
-      Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      UseVertexColor: true
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 7550047365608598364
-    Parent: 9632177487883183483
-    TagComponent:
-      Tag: e_d
-    TransformComponent:
-      Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
-      Scale: [1, 1, 1]
-    MeshComponent:
-      Origin: [0, 0, 6]
-      Direction: [-0.100000001, 0.100000001, -1]
-      Magnitude: 6.06191397
-      Radius: 0.00499999989
-      MeshDataType: CYLINDER
-      PolygonMode: Line
-    MaterialComponent:
-      BaseColor: [1, 0.225490212, 0.225490212, 1]
-      Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      UseVertexColor: false
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 591829791315918237
-    Parent: 9632177487883183483
-    TagComponent:
-      Tag: a_d_gt
-    TransformComponent:
-      Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
-      Scale: [1, 1, 1]
-    MeshComponent:
-      Origin: [0.001665766, 0.00372118829, 0.011528492]
-      Direction: [-0.000285810238, -0.858532846, 0.512758553]
-      Magnitude: 6.82833242
-      Radius: 0.00100000005
-      MeshDataType: CYLINDER
-      PolygonMode: Line
-    MaterialComponent:
-      BaseColor: [0.363321841, 0.686274529, 0, 1]
-      Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      UseVertexColor: false
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 6640303589509468237
-    Parent: 9632177487883183483
-    TagComponent:
-      Tag: e_d_gt
-    TransformComponent:
-      Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
-      Scale: [1, 1, 1]
-    MeshComponent:
-      Origin: [0, 0, 6]
-      Direction: [0.000278162071, 0.000621391868, -0.999999762]
-      Magnitude: 5.98847246
-      Radius: 0.0109999999
-      MeshDataType: CYLINDER
-      PolygonMode: Fill
-    MaterialComponent:
-      BaseColor: [0.093713969, 0.637254894, 0, 1]
       Emission: 0
       Diffuse: 0.5
       Specular: 0.5
