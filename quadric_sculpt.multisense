@@ -1,38 +1,6 @@
 Scene: quadric_sculpt.multisense
 Base Path: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository
 Entities:
-  - Entity: 2575529723130812058
-    Parent: 9996475508950502533
-    TagComponent:
-      Tag: Quadric 4
-    TransformComponent:
-      Position: [-0.899999976, 0, -0.5]
-      Rotation: [0.710353255, 1.06769036e-07, -0.703845322, 1.06769036e-07]
-      Scale: [1.00004232, 1, 1.00004232]
-    MeshComponent:
-      a: 1.63999999
-      b: 1
-      c: 1
-      t_x: -0.649999976
-      t_y: -0.119999997
-      gridResolution: 200
-      min: [-2, -2]
-      max: [2, 2]
-      BBeta: 0
-      Threshold: 0.00999999978
-      KernelScale: 1
-      MeshDataType: QUADRIC
-      PolygonMode: Fill
-    MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
-      Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
-      PhongExponent: 32
-      UseVertexColor: true
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
   - Entity: 13165272174566271342
     Parent: 9996475508950502533
     TagComponent:
@@ -40,7 +8,7 @@ Entities:
     TransformComponent:
       Position: [0, -1.39999998, -0.600000024]
       Rotation: [0.707106829, -0.707106709, 0, 0]
-      Scale: [1, 0.990852058, 0.990852058]
+      Scale: [1, 0.990719855, 0.990719855]
     MeshComponent:
       a: 1
       b: 1
@@ -56,10 +24,10 @@ Entities:
       MeshDataType: QUADRIC
       PolygonMode: Fill
     MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 0.800000012]
       Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
+      Diffuse: 1
+      Specular: 0
       PhongExponent: 32
       UseVertexColor: true
       VertexShader: defaultBasic.vert
@@ -72,7 +40,7 @@ Entities:
     TransformComponent:
       Position: [0, 1.39999998, -0.600000024]
       Rotation: [0.707106829, 0.707106709, 0, 0]
-      Scale: [1, 0.99521029, 0.99521029]
+      Scale: [1, 0.995078087, 0.995078087]
     MeshComponent:
       a: 1
       b: 1
@@ -88,10 +56,10 @@ Entities:
       MeshDataType: QUADRIC
       PolygonMode: Fill
     MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 0.800000012]
       Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
+      Diffuse: 1
+      Specular: 0
       PhongExponent: 32
       UseVertexColor: true
       VertexShader: defaultBasic.vert
@@ -120,10 +88,10 @@ Entities:
       MeshDataType: QUADRIC
       PolygonMode: Fill
     MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 0.800000012]
       Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
+      Diffuse: 1
+      Specular: 0
       PhongExponent: 32
       UseVertexColor: true
       VertexShader: defaultBasic.vert
@@ -140,9 +108,9 @@ Entities:
     MeshComponent:
       a: 1
       b: 1
-      c: 0
+      c: 0.100000001
       t_x: -1
-      t_y: 1
+      t_y: -1
       gridResolution: 200
       min: [-2, -2]
       max: [2, 2]
@@ -152,10 +120,10 @@ Entities:
       MeshDataType: QUADRIC
       PolygonMode: Fill
     MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 0.800000012]
       Emission: 0
-      Diffuse: 0.5
-      Specular: 0.5
+      Diffuse: 1
+      Specular: 0
       PhongExponent: 32
       UseVertexColor: true
       VertexShader: defaultBasic.vert
@@ -227,7 +195,7 @@ Entities:
     MeshComponent:
       Origin: [-99, 0, 0]
       Direction: [0.0900000036, -0.0900000036, -1]
-      Magnitude: 1.41129446
+      Magnitude: 6.53502798
       Radius: 0.00999999978
       MeshDataType: CYLINDER
       PolygonMode: Line
@@ -249,7 +217,7 @@ Entities:
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     VisibleComponent:
-      Visible: false
+      Visible: true
     GroupComponent:
       {}
     GroupComponent:
@@ -331,3 +299,35 @@ Entities:
         - 0
     GroupComponent:
       {}
+  - Entity: 2575529723130812058
+    Parent: 9996475508950502533
+    TagComponent:
+      Tag: Quadric 4
+    TransformComponent:
+      Position: [-0.899999976, 0, -0.5]
+      Rotation: [0.710353255, 1.06769036e-07, -0.703845322, 1.06769036e-07]
+      Scale: [1.00004232, 1, 1.00004232]
+    MeshComponent:
+      a: 1.63999999
+      b: 1
+      c: 1
+      t_x: -0.649999976
+      t_y: -0.119999997
+      gridResolution: 200
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: 0
+      Threshold: 0.00999999978
+      KernelScale: 1
+      MeshDataType: QUADRIC
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 0.800000012]
+      Emission: 0
+      Diffuse: 1
+      Specular: 0
+      PhongExponent: 32
+      UseVertexColor: true
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
