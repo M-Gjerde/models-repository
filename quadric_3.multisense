@@ -12,9 +12,9 @@ Entities:
     ScriptableComponent:
       ScriptName: VkRender::Emitter
     MeshComponent:
-      Origin: [0, 0, 3]
-      Direction: [0.0299999993, 0.100000001, -1]
-      Magnitude: 2.64156294
+      Origin: [0, -5, 0]
+      Direction: [0.100000001, 1, 0]
+      Magnitude: 5.04249811
       Radius: 0.00999999978
       MeshDataType: CYLINDER
       PolygonMode: Line
@@ -37,9 +37,9 @@ Entities:
       Scale: [1, 1, 1]
     GaussianComponent2DGS:
       Positions:
-        - [0, 0, 3]
+        - [0, -5, 0]
       Normals:
-        - [0, 0, -1]
+        - [0, 1, 0]
       Scales:
         - [0.200000003, 0.200000003]
       Emissions:
@@ -65,9 +65,9 @@ Entities:
     ScriptableComponent:
       ScriptName: VkRender::ContributionRay
     MeshComponent:
-      Origin: [0.0788184926, 0.262728304, 0.372716844]
-      Direction: [-0.0347573981, -0.99781841, 0.056129355]
-      Magnitude: 3.2676754
+      Origin: [0.501747429, 0.017473219, 2.83106871e-14]
+      Direction: [-0.234657526, -0.943533003, 0.233840287]
+      Magnitude: 3.13821149
       Radius: 0.00100000005
       MeshDataType: CYLINDER
       PolygonMode: Line
@@ -85,7 +85,7 @@ Entities:
     TagComponent:
       Tag: Coordinates
     TransformComponent:
-      Position: [0, 0, 0]
+      Position: [0, 1, 0]
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
@@ -107,7 +107,7 @@ Entities:
     TagComponent:
       Tag: Quadric
     TransformComponent:
-      Position: [0, 0, 0]
+      Position: [0.600000024, 0, 0]
       Rotation: [0.707106769, 0.707106769, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
