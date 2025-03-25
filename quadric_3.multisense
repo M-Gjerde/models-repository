@@ -18,8 +18,8 @@ Entities:
     TagComponent:
       Tag: Camera1
     TransformComponent:
-      Position: [0, 0, 2]
-      Rotation: [1, 0, 0, 0]
+      Position: [0, -3, 0]
+      Rotation: [0.707106769, 0.707106769, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
       MeshDataType: CAMERA_GIZMO_PINHOLE
@@ -52,13 +52,13 @@ Entities:
     TagComponent:
       Tag: Quadric
     TransformComponent:
-      Position: [0.5, 0, 0]
-      Rotation: [1, 0, 0, 0]
+      Position: [0.00363804912, -0.471493036, -0.0293226633]
+      Rotation: [0.923879504, 0.382683456, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
       a: 1
       b: 1
-      c: 2
+      c: 0.100000001
       t_x: -1
       t_y: -1.5
       gridResolution: 200
@@ -112,9 +112,9 @@ Entities:
     ScriptableComponent:
       ScriptName: VkRender::ContributionRay
     MeshComponent:
-      Origin: [0.254587084, 0, -0.0917415619]
-      Direction: [-0.120819002, 0, 0.992674589]
-      Magnitude: 3.1071775
+      Origin: [-99, 0, 0]
+      Direction: [0.999541223, -0.0302891284, 0]
+      Magnitude: 100.045441
       Radius: 0.00100000005
       MeshDataType: CYLINDER
       PolygonMode: Line
@@ -141,7 +141,7 @@ Entities:
       Normals:
         - [0, 0, -1]
       Scales:
-        - [0.200000003, 0.200000003]
+        - [1, 0.5]
       Emissions:
         - 0.100000001
       Opacities:
@@ -165,9 +165,9 @@ Entities:
     ScriptableComponent:
       ScriptName: VkRender::Emitter
     MeshComponent:
-      Origin: [0, 0, 5]
-      Direction: [0.0500000007, 0, -1]
-      Magnitude: 5.09810257
+      Origin: [-99, 0, 0]
+      Direction: [0.0500000007, 0.0599999987, -1]
+      Magnitude: 4.64535236
       Radius: 0.00999999978
       MeshDataType: CYLINDER
       PolygonMode: Line
