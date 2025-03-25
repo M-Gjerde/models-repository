@@ -1,6 +1,33 @@
 Scene: quadric_3.multisense
 Base Path: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository
 Entities:
+  - Entity: 13685893382691451995
+    Parent: 9848236121165587096
+    TagComponent:
+      Tag: EntityGradients
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    ScriptableComponent:
+      ScriptName: VkRender::GradientRay
+    MeshComponent:
+      Origin: [0, 0, 0]
+      Direction: [.nan, .nan, .nan]
+      Magnitude: 1
+      Radius: 0.0130000003
+      MeshDataType: CYLINDER
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.117647171, 0, 1, 1]
+      Emission: 0
+      Diffuse: 1
+      Specular: 0
+      PhongExponent: 32
+      UseVertexColor: false
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
   - Entity: 9848236121165587096
     TagComponent:
       Tag: rays
@@ -18,8 +45,8 @@ Entities:
     TagComponent:
       Tag: Camera1
     TransformComponent:
-      Position: [0, -3, 0]
-      Rotation: [0.707106769, 0.707106769, 0, 0]
+      Position: [0, 0, 2.20000005]
+      Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
       MeshDataType: CAMERA_GIZMO_PINHOLE
@@ -52,13 +79,13 @@ Entities:
     TagComponent:
       Tag: Quadric
     TransformComponent:
-      Position: [0.00363804912, -0.471493036, -0.0293226633]
-      Rotation: [0.923879504, 0.382683456, 0, 0]
+      Position: [0.00709995674, -0.000451461994, -0.0893625915]
+      Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
       a: 1
       b: 1
-      c: 0.100000001
+      c: 1
       t_x: -1
       t_y: -1.5
       gridResolution: 200
@@ -83,7 +110,7 @@ Entities:
     TagComponent:
       Tag: Coordinates
     TransformComponent:
-      Position: [0, 0, 0]
+      Position: [0, 0, -1.10000002]
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
@@ -113,8 +140,8 @@ Entities:
       ScriptName: VkRender::ContributionRay
     MeshComponent:
       Origin: [-99, 0, 0]
-      Direction: [0.999541223, -0.0302891284, 0]
-      Magnitude: 100.045441
+      Direction: [0.999753177, 0, 0.0222167373]
+      Magnitude: 100.024437
       Radius: 0.00100000005
       MeshDataType: CYLINDER
       PolygonMode: Line
@@ -137,11 +164,11 @@ Entities:
       Scale: [1, 1, 1]
     GaussianComponent2DGS:
       Positions:
-        - [0, 0, 5]
+        - [5, 5, 1]
       Normals:
-        - [0, 0, -1]
+        - [-1, -1, -0.200000003]
       Scales:
-        - [1, 0.5]
+        - [0.100000001, 0.100000001]
       Emissions:
         - 0.100000001
       Opacities:
@@ -166,8 +193,8 @@ Entities:
       ScriptName: VkRender::Emitter
     MeshComponent:
       Origin: [-99, 0, 0]
-      Direction: [0.0500000007, 0.0599999987, -1]
-      Magnitude: 4.64535236
+      Direction: [0.0500000007, -0.100000001, -1]
+      Magnitude: 5.43992043
       Radius: 0.00999999978
       MeshDataType: CYLINDER
       PolygonMode: Line
