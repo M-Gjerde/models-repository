@@ -12,9 +12,9 @@ Entities:
     ScriptableComponent:
       ScriptName: VkRender::Emitter
     MeshComponent:
-      Origin: [0, 5, 0]
-      Direction: [0, -1, -0.0299999993]
-      Magnitude: 4.61121655
+      Origin: [0, 0, 5]
+      Direction: [0, -0.0700000003, -1]
+      Magnitude: 5.19822836
       Radius: 0.00999999978
       MeshDataType: CYLINDER
       PolygonMode: Line
@@ -37,9 +37,9 @@ Entities:
       Scale: [1, 1, 1]
     GaussianComponent2DGS:
       Positions:
-        - [0, 5, 0]
+        - [0, 0, 5]
       Normals:
-        - [0, -1, 0]
+        - [0, 0, -1]
       Scales:
         - [0.100000001, 0.100000001]
       Emissions:
@@ -65,9 +65,9 @@ Entities:
     ScriptableComponent:
       ScriptName: VkRender::ContributionRay
     MeshComponent:
-      Origin: [0, 0.39085722, -0.138274282]
-      Direction: [0, -0.164868817, 0.986315489]
-      Magnitude: 3.37071633
+      Origin: [0, -0.362987757, -0.18553929]
+      Direction: [0, 0.163841754, 0.986486673]
+      Magnitude: 3.21547771
       Radius: 0.00100000005
       MeshDataType: CYLINDER
       PolygonMode: Line
@@ -107,7 +107,7 @@ Entities:
     TagComponent:
       Tag: Quadric
     TransformComponent:
-      Position: [0, 0, 0]
+      Position: [-0.00412919372, 0.00626891479, -0.0621090382]
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
@@ -138,9 +138,11 @@ Entities:
     TagComponent:
       Tag: Camera1
     TransformComponent:
-      Position: [0, 0, 2.20000005]
+      Position: [0, 0, 2]
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
+    ScriptableComponent:
+      ScriptName: VkRender::DefaultController
     MeshComponent:
       MeshDataType: CAMERA_GIZMO_PINHOLE
       PolygonMode: Line
@@ -200,6 +202,33 @@ Entities:
       PolygonMode: Fill
     MaterialComponent:
       BaseColor: [0.117647171, 0, 1, 1]
+      Emission: 0
+      Diffuse: 1
+      Specular: 0
+      PhongExponent: 32
+      UseVertexColor: false
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 12152838445467772058
+    Parent: 9848236121165587096
+    TagComponent:
+      Tag: ImageIntensityGradient
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    ScriptableComponent:
+      ScriptName: VkRender::IntensityGradientRay
+    MeshComponent:
+      Origin: [0, 0, 2]
+      Direction: [0, 0, -1]
+      Magnitude: 2.2650001
+      Radius: 0.0199999996
+      MeshDataType: CYLINDER
+      PolygonMode: Line
+    MaterialComponent:
+      BaseColor: [0.501960814, 1, 0, 0.247058824]
       Emission: 0
       Diffuse: 1
       Specular: 0
