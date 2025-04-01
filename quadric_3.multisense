@@ -13,8 +13,8 @@ Entities:
       ScriptName: VkRender::Emitter
     MeshComponent:
       Origin: [0, 0, 5]
-      Direction: [0, -0.0700000003, -1]
-      Magnitude: 5.19822836
+      Direction: [-0.0199999996, -0.0700000003, -1]
+      Magnitude: 5.13803196
       Radius: 0.00999999978
       MeshDataType: CYLINDER
       PolygonMode: Line
@@ -65,9 +65,9 @@ Entities:
     ScriptableComponent:
       ScriptName: VkRender::ContributionRay
     MeshComponent:
-      Origin: [0, -0.362987757, -0.18553929]
-      Direction: [0, 0.163841754, 0.986486673]
-      Magnitude: 3.21547771
+      Origin: [-0.102489404, -0.358712882, -0.124470234]
+      Direction: [0.0387307294, -0.998142004, 0.0470372848]
+      Magnitude: 3.64620376
       Radius: 0.00100000005
       MeshDataType: CYLINDER
       PolygonMode: Line
@@ -107,7 +107,7 @@ Entities:
     TagComponent:
       Tag: Quadric
     TransformComponent:
-      Position: [-0.00412919372, 0.00626891479, -0.0621090382]
+      Position: [0, 0, 0]
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
@@ -138,8 +138,8 @@ Entities:
     TagComponent:
       Tag: Camera1
     TransformComponent:
-      Position: [0, 0, 2]
-      Rotation: [1, 0, 0, 0]
+      Position: [0, -3, 0]
+      Rotation: [0.703394711, 0.710799456, 0, 0]
       Scale: [1, 1, 1]
     ScriptableComponent:
       ScriptName: VkRender::DefaultController
@@ -158,7 +158,7 @@ Entities:
         Fy: 600
         Cx: 300
         Cy: 300
-        Focal Length: 10
+        Focal Length: 1000
         Aperture: 4
     MaterialComponent:
       BaseColor: [1, 1, 0, 1]
@@ -221,9 +221,9 @@ Entities:
     ScriptableComponent:
       ScriptName: VkRender::IntensityGradientRay
     MeshComponent:
-      Origin: [0, 0, 2]
-      Direction: [0, 0, -1]
-      Magnitude: 2.2650001
+      Origin: [0, -3, 0]
+      Direction: [-0.0387307219, 0.998142064, -0.0470371842]
+      Magnitude: 2.64620519
       Radius: 0.0199999996
       MeshDataType: CYLINDER
       PolygonMode: Line
