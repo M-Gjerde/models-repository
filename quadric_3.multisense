@@ -1,25 +1,146 @@
 Scene: quadric_3.multisense
 Base Path: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository
 Entities:
-  - Entity: 17583312095664692692
+  - Entity: 13685893382691451995
     Parent: 9848236121165587096
     TagComponent:
-      Tag: Emitter
+      Tag: EntityGradients
     TransformComponent:
       Position: [0, 0, 0]
       Rotation: [1, 0, 0, 0]
       Scale: [1, 1, 1]
     ScriptableComponent:
-      ScriptName: VkRender::Emitter
+      ScriptName: VkRender::GradientRay
     MeshComponent:
-      Origin: [0, 0, 5]
-      Direction: [-0.0199999996, -0.0700000003, -1]
-      Magnitude: 5.13803196
-      Radius: 0.00999999978
+      Origin: [0, 0, 0]
+      Direction: [.nan, .nan, .nan]
+      Magnitude: 1
+      Radius: 0.0130000003
+      MeshDataType: CYLINDER
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.117647171, 0, 1, 1]
+      Emission: 0
+      Diffuse: 1
+      Specular: 0
+      PhongExponent: 32
+      UseVertexColor: false
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 9848236121165587096
+    TagComponent:
+      Tag: rays
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    VisibleComponent:
+      Visible: true
+    GroupComponent:
+      {}
+    GroupComponent:
+      {}
+  - Entity: 12152838445467772058
+    Parent: 9848236121165587096
+    TagComponent:
+      Tag: ImageIntensityGradient
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    ScriptableComponent:
+      ScriptName: VkRender::IntensityGradientRay
+    MeshComponent:
+      Origin: [-99, 0, 0]
+      Direction: [0.0345336571, 0.732129395, -0.680289626]
+      Magnitude: 2.86699057
+      Radius: 0.0199999996
       MeshDataType: CYLINDER
       PolygonMode: Line
     MaterialComponent:
-      BaseColor: [1, 0, 0, 1]
+      BaseColor: [0.501960814, 1, 0, 0.247058824]
+      Emission: 0
+      Diffuse: 1
+      Specular: 0
+      PhongExponent: 32
+      UseVertexColor: false
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 9795280468656803649
+    Parent: 16488257401887647549
+    TagComponent:
+      Tag: Quadric
+    TransformComponent:
+      Position: [1, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      a: 1
+      b: 1
+      c: 1
+      t_x: -1
+      t_y: -1
+      gridResolution: 200
+      min: [-1, -1]
+      max: [1, 1]
+      BBeta: 3.48769175e-41
+      Threshold: 0.00999999978
+      KernelScale: 1
+      MeshDataType: QUADRIC
+      PolygonMode: Line
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 0.800000012]
+      Emission: 0
+      Diffuse: 1
+      Specular: 0
+      PhongExponent: 32
+      UseVertexColor: true
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 14114437421443806136
+    TagComponent:
+      Tag: Coordinates
+    TransformComponent:
+      Position: [0, 0, -1.10000002]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/coordinates/coordinates.obj
+      RelativeModelPath: coordinates/coordinates.obj
+      MeshDataType: OBJ_FILE
+      PolygonMode: Fill
+    MaterialComponent:
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      Emission: 0
+      Diffuse: 1
+      Specular: 0
+      PhongExponent: 32
+      UseVertexColor: false
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 5830710398422587390
+    Parent: 9848236121165587096
+    TagComponent:
+      Tag: ContributionRay
+    TransformComponent:
+      Position: [0, 0, 0]
+      Rotation: [1, 0, 0, 0]
+      Scale: [1, 1, 1]
+    ScriptableComponent:
+      ScriptName: VkRender::ContributionRay
+    MeshComponent:
+      Origin: [-99, 0, 0]
+      Direction: [0.999592125, -0.0201937798, 0.0201937798]
+      Magnitude: 100.040398
+      Radius: 0.00100000005
+      MeshDataType: CYLINDER
+      PolygonMode: Line
+    MaterialComponent:
+      BaseColor: [1, 0.0147058964, 0.0147058964, 1]
       Emission: 0
       Diffuse: 0.5
       Specular: 0.5
@@ -54,25 +175,25 @@ Entities:
         - 0.5
       PhongExponents:
         - 32
-  - Entity: 5830710398422587390
+  - Entity: 17583312095664692692
     Parent: 9848236121165587096
     TagComponent:
-      Tag: ContributionRay
+      Tag: Emitter
     TransformComponent:
       Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
+      Rotation: [0.998440742, 0, 0.0558215044, 0]
       Scale: [1, 1, 1]
     ScriptableComponent:
-      ScriptName: VkRender::ContributionRay
+      ScriptName: VkRender::Emitter
     MeshComponent:
-      Origin: [-0.102489404, -0.358712882, -0.124470234]
-      Direction: [0.0387307294, -0.998142004, 0.0470372848]
-      Magnitude: 3.64620376
-      Radius: 0.00100000005
+      Origin: [-99, 0, 0]
+      Direction: [0.0199999996, 0.0199999996, -1]
+      Magnitude: 5.52861118
+      Radius: 0.00999999978
       MeshDataType: CYLINDER
       PolygonMode: Line
     MaterialComponent:
-      BaseColor: [1, 0.0147058964, 0.0147058964, 1]
+      BaseColor: [1, 0, 0, 1]
       Emission: 0
       Diffuse: 0.5
       Specular: 0.5
@@ -81,20 +202,32 @@ Entities:
       VertexShader: defaultBasic.vert
       FragmentShader: defaultPhongLight.frag
       AlbedoTexturePath: default.png
-  - Entity: 14114437421443806136
+  - Entity: 11136364470113899631
     TagComponent:
-      Tag: Coordinates
+      Tag: Camera1
     TransformComponent:
-      Position: [0, 0, -1.10000002]
-      Rotation: [1, 0, 0, 0]
+      Position: [0, -2, 2]
+      Rotation: [0.923879504, 0.382683456, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
-      ModelPath: /home/magnus/CLionProjects/multisense_viewer/Resources/models-repository/coordinates/coordinates.obj
-      RelativeModelPath: coordinates/coordinates.obj
-      MeshDataType: OBJ_FILE
-      PolygonMode: Fill
+      MeshDataType: CAMERA_GIZMO_PINHOLE
+      PolygonMode: Line
+    CameraComponent:
+      CameraType: PINHOLE
+      RenderFromViewpoint: false
+      FlipX: true
+      FlipY: true
+      PinHoleParameters:
+        Height: 600
+        Width: 600
+        Fx: 600
+        Fy: 600
+        Cx: 300
+        Cy: 300
+        Focal Length: 10
+        Aperture: 4
     MaterialComponent:
-      BaseColor: [0.800000012, 0.800000012, 0.800000012, 1]
+      BaseColor: [1, 1, 1, 1]
       Emission: 0
       Diffuse: 1
       Specular: 0
@@ -103,22 +236,23 @@ Entities:
       VertexShader: defaultBasic.vert
       FragmentShader: defaultPhongLight.frag
       AlbedoTexturePath: default.png
-  - Entity: 9795280468656803649
+  - Entity: 8860743011599477634
+    Parent: 16488257401887647549
     TagComponent:
-      Tag: Quadric
+      Tag: Quadric2
     TransformComponent:
-      Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
+      Position: [-0.999217987, 0, -0.499795854]
+      Rotation: [0.923879504, 0.382683456, 0, 0]
       Scale: [1, 1, 1]
     MeshComponent:
       a: 1
       b: 1
-      c: 1
+      c: 2
       t_x: -1
       t_y: -1.5
       gridResolution: 200
-      min: [-2, -2]
-      max: [2, 2]
+      min: [-1, -1]
+      max: [1, 1]
       BBeta: 0
       Threshold: 0.00999999978
       KernelScale: 1
@@ -134,45 +268,9 @@ Entities:
       VertexShader: defaultBasic.vert
       FragmentShader: defaultPhongLight.frag
       AlbedoTexturePath: default.png
-  - Entity: 6762755740884248819
+  - Entity: 16488257401887647549
     TagComponent:
-      Tag: Camera1
-    TransformComponent:
-      Position: [0, -3, 0]
-      Rotation: [0.703394711, 0.710799456, 0, 0]
-      Scale: [1, 1, 1]
-    ScriptableComponent:
-      ScriptName: VkRender::DefaultController
-    MeshComponent:
-      MeshDataType: CAMERA_GIZMO_PINHOLE
-      PolygonMode: Line
-    CameraComponent:
-      CameraType: PINHOLE
-      RenderFromViewpoint: true
-      FlipX: true
-      FlipY: true
-      PinHoleParameters:
-        Height: 600
-        Width: 600
-        Fx: 600
-        Fy: 600
-        Cx: 300
-        Cy: 300
-        Focal Length: 1000
-        Aperture: 4
-    MaterialComponent:
-      BaseColor: [1, 1, 0, 1]
-      Emission: 0
-      Diffuse: 1
-      Specular: 0
-      PhongExponent: 32
-      UseVertexColor: false
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 9848236121165587096
-    TagComponent:
-      Tag: rays
+      Tag: Quads
     TransformComponent:
       Position: [0, 0, 0]
       Rotation: [1, 0, 0, 0]
@@ -183,57 +281,35 @@ Entities:
       {}
     GroupComponent:
       {}
-  - Entity: 13685893382691451995
-    Parent: 9848236121165587096
+  - Entity: 17393195150814001847
+    Parent: 16488257401887647549
     TagComponent:
-      Tag: EntityGradients
+      Tag: Quadric3
     TransformComponent:
-      Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
+      Position: [0, 2, -1]
+      Rotation: [0.970016897, 0.162256077, 0.00931884907, -0.180702478]
       Scale: [1, 1, 1]
-    ScriptableComponent:
-      ScriptName: VkRender::GradientRay
     MeshComponent:
-      Origin: [0, 0, 0]
-      Direction: [.nan, .nan, .nan]
-      Magnitude: 1
-      Radius: 0.0130000003
-      MeshDataType: CYLINDER
-      PolygonMode: Fill
-    MaterialComponent:
-      BaseColor: [0.117647171, 0, 1, 1]
-      Emission: 0
-      Diffuse: 1
-      Specular: 0
-      PhongExponent: 32
-      UseVertexColor: false
-      VertexShader: defaultBasic.vert
-      FragmentShader: defaultPhongLight.frag
-      AlbedoTexturePath: default.png
-  - Entity: 12152838445467772058
-    Parent: 9848236121165587096
-    TagComponent:
-      Tag: ImageIntensityGradient
-    TransformComponent:
-      Position: [0, 0, 0]
-      Rotation: [1, 0, 0, 0]
-      Scale: [1, 1, 1]
-    ScriptableComponent:
-      ScriptName: VkRender::IntensityGradientRay
-    MeshComponent:
-      Origin: [0, -3, 0]
-      Direction: [-0.0387307219, 0.998142064, -0.0470371842]
-      Magnitude: 2.64620519
-      Radius: 0.0199999996
-      MeshDataType: CYLINDER
+      a: 1
+      b: 1
+      c: 1
+      t_x: -1
+      t_y: -1.5
+      gridResolution: 200
+      min: [-2, -2]
+      max: [2, 2]
+      BBeta: 0
+      Threshold: 0.100000001
+      KernelScale: 1
+      MeshDataType: QUADRIC
       PolygonMode: Line
     MaterialComponent:
-      BaseColor: [0.501960814, 1, 0, 0.247058824]
+      BaseColor: [0.800000012, 0.800000012, 0.800000012, 0.800000012]
       Emission: 0
       Diffuse: 1
       Specular: 0
       PhongExponent: 32
-      UseVertexColor: false
+      UseVertexColor: true
       VertexShader: defaultBasic.vert
       FragmentShader: defaultPhongLight.frag
       AlbedoTexturePath: default.png

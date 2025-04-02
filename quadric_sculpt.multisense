@@ -8,13 +8,13 @@ Entities:
     TransformComponent:
       Position: [0, -1.39999998, -0.600000024]
       Rotation: [0.707106829, -0.707106709, 0, 0]
-      Scale: [1, 0.990719855, 0.990719855]
+      Scale: [1, 0.990023315, 0.990023315]
     MeshComponent:
       a: 1
       b: 1
       c: 1
       t_x: 1
-      t_y: 1
+      t_y: 1.5
       gridResolution: 200
       min: [-2, -2]
       max: [2, 2]
@@ -40,12 +40,12 @@ Entities:
     TransformComponent:
       Position: [0, 1.39999998, -0.600000024]
       Rotation: [0.707106829, 0.707106709, 0, 0]
-      Scale: [1, 0.995078087, 0.995078087]
+      Scale: [1, 0.994381547, 0.994381547]
     MeshComponent:
       a: 1
       b: 1
       c: 1
-      t_x: 1
+      t_x: 1.5
       t_y: 1
       gridResolution: 200
       min: [-2, -2]
@@ -77,7 +77,7 @@ Entities:
       a: 1
       b: 1
       c: 1
-      t_x: -1
+      t_x: -1.5
       t_y: -1
       gridResolution: 200
       min: [-2, -2]
@@ -110,7 +110,7 @@ Entities:
       b: 1
       c: 0.100000001
       t_x: -1
-      t_y: -1
+      t_y: -1.5
       gridResolution: 200
       min: [-2, -2]
       max: [2, 2]
@@ -141,8 +141,8 @@ Entities:
       ScriptName: VkRender::ContributionRay
     MeshComponent:
       Origin: [-99, 0, 0]
-      Direction: [0.999755025, 0, 0.0221312474]
-      Magnitude: 103.925453
+      Direction: [0.999024868, 0.0312195271, 0.0312195271]
+      Magnitude: 97.0937042
       Radius: 0.00100000005
       MeshDataType: CYLINDER
       PolygonMode: Line
@@ -195,7 +195,7 @@ Entities:
     MeshComponent:
       Origin: [-99, 0, 0]
       Direction: [0.0900000036, -0.0900000036, -1]
-      Magnitude: 6.53502798
+      Magnitude: 6.3344264
       Radius: 0.00999999978
       MeshDataType: CYLINDER
       PolygonMode: Line
@@ -328,6 +328,40 @@ Entities:
       Specular: 0
       PhongExponent: 32
       UseVertexColor: true
+      VertexShader: defaultBasic.vert
+      FragmentShader: defaultPhongLight.frag
+      AlbedoTexturePath: default.png
+  - Entity: 12738523981591238899
+    TagComponent:
+      Tag: Camera1
+    TransformComponent:
+      Position: [-3, 3, 3]
+      Rotation: [0.353553385, 0.146446615, -0.353553414, -0.853553355]
+      Scale: [1, 1, 1]
+    MeshComponent:
+      MeshDataType: CAMERA_GIZMO_PINHOLE
+      PolygonMode: Line
+    CameraComponent:
+      CameraType: PINHOLE
+      RenderFromViewpoint: true
+      FlipX: true
+      FlipY: true
+      PinHoleParameters:
+        Height: 600
+        Width: 600
+        Fx: 600
+        Fy: 600
+        Cx: 300
+        Cy: 300
+        Focal Length: 10
+        Aperture: 4
+    MaterialComponent:
+      BaseColor: [1, 1, 0, 1]
+      Emission: 0
+      Diffuse: 1
+      Specular: 0
+      PhongExponent: 32
+      UseVertexColor: false
       VertexShader: defaultBasic.vert
       FragmentShader: defaultPhongLight.frag
       AlbedoTexturePath: default.png
